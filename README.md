@@ -2,6 +2,9 @@
 
 Trò chơi xây dựng bằng khối, chạy trong trình duyệt có WebGL2. C25 bổ sung **100 mẫu khối**, **50 họa tiết 24×24** và **Xưởng 100 mẫu mới** để khám phá, chọn vật liệu rồi xây công trình của mình.
 
+- [Chơi C25 trực tuyến](https://fagonviendra.github.io/mai-me-rap-c25/)
+- [Xem gallery 41 ảnh](https://fagonviendra.github.io/mai-me-rap-c25/MMR_ANH_MOI_C25.html)
+
 ## Điểm chính
 
 - **100 mẫu xây dựng:** 40 khối bề mặt; 60 mẫu phiến thấp, bậc thang, cột, lan can, khung, nội thất và chi tiết vườn. Có bộ lọc bộ sưu tập và tìm tên có dấu hoặc không dấu.
@@ -11,11 +14,13 @@ Trò chơi xây dựng bằng khối, chạy trong trình duyệt có WebGL2. C2
 
 ## Mở game và xem nguồn
 
-Bản nguồn công khai gồm cây nguồn C25, HTML đã dựng và bốn tài liệu hướng dẫn. `MAI_ME_RAP.html` là tệp game đã dựng. Phần dưới phân biệt gói chơi **GAME** với bộ mã **SOURCE**; các gói và gallery chỉ dùng khi được cung cấp kèm bản phát hành.
+Repository gồm cây nguồn C25, HTML đã dựng, bốn tài liệu hướng dẫn, ba tệp khởi chạy và gallery 41 ảnh gốc. `MAI_ME_RAP.html` là tệp game đã dựng; `index.html` có cùng nội dung để mở trên GitHub Pages. Phần dưới phân biệt cách chơi **GAME** với việc đọc và dựng **SOURCE**.
 
 ### GAME — bộ tệp để chơi
 
-Giải nén toàn bộ gói GAME rồi chạy `CHOI_GAME.cmd`. Giữ `MAI_ME_RAP.html`, `open_or_serve.py` và `serve.py` trong cùng thư mục; bộ khởi chạy cần Python 3. Chơi tiếp bằng cùng trình duyệt và cùng địa chỉ mà bộ khởi chạy mở để dùng đúng dữ liệu lưu.
+Có thể tải repository bằng **Code → Download ZIP**, giải nén toàn bộ rồi chạy `CHOI_GAME.cmd` trong thư mục vừa giải nén. Cách này cần đủ ba tệp `CHOI_GAME.cmd`, `open_or_serve.py`, `serve.py` và `MAI_ME_RAP.html` ở cùng thư mục; dùng Python 3.10 trở lên. Gói GAME riêng, nếu được cung cấp, cũng mở bằng cách đó.
+
+Chơi tiếp bằng cùng trình duyệt và cùng địa chỉ mà bộ khởi chạy mở để dùng đúng dữ liệu lưu. Bản chạy tại máy và bản GitHub Pages có địa chỉ khác nhau, nên hãy xuất/nhập JSON khi muốn chuyển công trình giữa hai nơi. Gallery trực tuyến nằm ở liên kết phía trên; máy chủ cục bộ của bộ khởi chạy chỉ phục vụ game HTML.
 
 Từ màn hình đầu: **Thế giới & kho cảnh → Xưởng 100 mẫu mới → Chơi Xưởng 100 mẫu mới**. Trong túi đồ, chọn **Bộ sưu tập → 100 mẫu mới**. Để dùng họa tiết mới: **Esc → Thiết lập → Gói chất liệu → Chi tiết 24×24**.
 
