@@ -1,0 +1,216 @@
+MẢI MÊ RÁP C25 — DANH MỤC 100 MẪU
+Danh mục theo mã và ghi chú sử dụng trong game. Các mẫu có hướng cố định.
+
+KHỐI BỀ MẶT
+249. Sa thạch chạm viền
+    Khối nền sáng với mạch ngang lệch và viền đá đục sâu.
+250. Đá hoa cương lát quạt
+    Các cung đá xếp nan quạt làm sân và lối rẽ.
+251. Đá vôi hàng dài
+    Hàng đá dài xen viên ngắn, mạch vữa hẹp cho tường.
+252. Bazan khảm bát giác
+    Bát giác bazan viền ngà và chốt đồng ở giao điểm.
+253. Đá travertine sọc rỗ
+    Dải khoáng ngang và hốc nhỏ thành lớp cho bậc và cột.
+254. Đá phiến ghép chữ V
+    Hai dải phiến xiên gặp nhau thành chữ V rõ.
+255. Mảng cuội suối ghép
+    Cuội tròn nhiều cỡ nằm trong nền vữa tối.
+256. Cẩm thạch trắng vân nhánh
+    Mặt trắng yên với một vân xám chia nhánh, dùng cho sảnh.
+257. Cẩm thạch xanh vân gãy
+    Mạch kem góc cạnh cắt qua nền xanh đậm.
+258. Đá hồng phân tầng
+    Dải đá hồng lệch nhịp với lớp vàng nhạt mỏng.
+259. Đá vôi chạm hóa thạch
+    Vỏ xoắn và gân lá khắc riêng trên đá, không phải quặng.
+260. Gốm lam sóng nước
+    Ba hàng sóng men lam viền ngà cho hồ và mái hiên.
+261. Gốm đất mặt trời
+    Đĩa mặt trời giữa ô, tia rộng và vòng chấm bao ngoài.
+262. Gốm ngà phù điêu quạt
+    Nan quạt bán tròn nổi bằng ba sắc men ngà.
+263. Gốm ngọc đốt trúc
+    Ba thân trúc có đốt và lá chéo, họa tiết tĩnh.
+264. Khảm chàm sao tám cánh
+    Sao tám cánh men ngà trên nền chàm với góc đất nung.
+265. Gạch vàng đan rổ
+    Cặp gạch dài xoay vuông góc như mối đan cho đường đi.
+266. Gốm mận ô bát giác
+    Ô bát giác men mận và hình thoi ngà phân cách.
+267. Gạch hoa cánh phấn
+    Hoa bốn cánh xanh xám, tâm đất đỏ trên nền ngà.
+268. Gạch sẫm hàng đứng
+    Gạch đứng có đầu sáng, ghép viền tường và cửa.
+269. Gỗ sồi ghép chốt
+    Ván rộng có chốt vuông và đường mộng rõ.
+270. Tre đan zích zắc
+    Nan tre sáng tối đan zích zắc, có mép buộc.
+271. Gỗ óc chó xương cá
+    Thanh nâu sẫm ghép xương cá, thớ chạy theo thanh.
+272. Gỗ tuyết tùng giằng chéo
+    Khung viền và giằng chữ X tách khỏi nền ván.
+273. Gỗ bạch dương mộng vuông
+    Các khung vuông lồng nhau với chốt nhỏ ở góc.
+274. Vảy gỗ dẻ lợp mái
+    Hai hàng vảy tròn chồng mí có đinh trên đỉnh.
+275. Mây đan mắt lục giác
+    Nan mây tạo mắt lục giác màu tối trên khối kín.
+276. Gỗ hun rãnh dọc
+    Rãnh dọc đen than và các vết nứt ngắn, bề mặt tĩnh.
+277. Ván thuyền ghép đinh
+    Ván bạc màu theo hàng, đầu đinh sẫm và thớ dài.
+278. Vách giấy ô gỗ
+    Ô giấy kem trong lưới gỗ, khối đầy không mở được.
+279. Đồng mái gờ đứng
+    Hai gờ đứng, mép tôn gập và đường đồng sáng.
+280. Kẽm mái hình thoi
+    Tấm kẽm ghép thoi có gờ sáng ở hai cạnh.
+281. Sắt tấm sóng vuông
+    Sóng vuông rộng xen dải tối, dùng cho mái xưởng.
+282. Đồng thau viền đinh
+    Tấm thau có viền kép và bốn đinh lớn.
+283. Đồng thiếc gõ búa
+    Các vết búa tròn lệch hàng với phản sáng tiết chế.
+284. Đồng xanh ô lõm
+    Ô vuông chìm và bốn góc đồng nâu, không có lỗ xuyên.
+285. Ngói phiến hàng gờ
+    Mí ngói bản rộng, gờ nối dọc xen kẽ.
+286. Mái rơm buộc lạt
+    Rơm chạy dọc thành bó, hai hàng lạt ngang rõ.
+287. Ngói đất chồng mí
+    Ngói đất bản cong biểu diễn bằng mí và đường gờ.
+288. Ngói men lam mũi tên
+    Các mũi ngói men lam chồng thành hàng so le.
+
+PHIẾN THẤP
+289. Nửa tấm sa thạch viền
+    Lát bậc thấp và bờ sân cao nửa khối.
+290. Nửa tấm đá lát quạt
+    Ghép lối đi thấp, giữ họa tiết nan quạt.
+291. Nửa tấm travertine
+    Bậc thấp với lớp khoáng ngang lộ ở cạnh.
+292. Nửa tấm cẩm thạch trắng
+    Mặt bàn hoặc sàn thấp có vân nhánh.
+293. Nửa tấm gốm sóng lam
+    Viền hồ và mái hiên thấp bằng gốm.
+294. Nửa tấm gạch đan rổ
+    Đường đi nửa khối với mối đan rõ.
+295. Nửa tấm sồi ghép chốt
+    Sàn gỗ thấp hoặc mái hiên mỏng.
+296. Nửa tấm bạch dương mộng
+    Sàn sáng giữ các khung mộng vuông.
+297. Nửa tấm đồng gờ
+    Bậc xưởng và mép mái đồng nửa khối.
+298. Nửa tấm mái rơm
+    Mái rơm mỏng cho nhà vườn.
+
+BẬC THANG
+299. Bậc sa thạch chạm viền
+    Bậc thấp ở +Z, cao ở −Z; hướng đặt cố định.
+300. Bậc đá hoa cương lát quạt
+    Bậc sân quạt, phía cao cố định −Z.
+301. Bậc travertine sọc
+    Mặt bậc đá kem phân tầng, cao ở −Z.
+302. Bậc cẩm thạch vân nhánh
+    Cầu thang sảnh trắng, cao ở −Z.
+303. Bậc gốm sóng lam
+    Bậc gốm xanh hoặc mái bậc, cao ở −Z.
+304. Bậc gạch vàng đan rổ
+    Bậc ngoài sân vàng ấm, cao ở −Z.
+305. Bậc sồi ghép chốt
+    Bậc hiên gỗ, cao ở −Z.
+306. Bậc bạch dương mộng vuông
+    Bậc gỗ sáng, cao ở −Z.
+307. Bậc đồng mái gờ
+    Bậc xưởng hoặc mái đồng, cao ở −Z.
+308. Bậc mái rơm buộc lạt
+    Ghép mái rơm bậc, cao ở −Z.
+
+CỘT
+309. Cột đá vôi cạnh vát
+    Chân và đầu vuông, thân vát bốn cạnh bằng các hộp.
+310. Cột bazan đai tầng
+    Thân tối, hai đai rộng tạo nhịp cho cổng.
+311. Cột sa thạch thu tầng
+    Ba tầng thân thu nhỏ dần, đỡ mái và hiên.
+312. Trụ ốp cẩm thạch
+    Trụ nông áp cạnh −Z, có chân và đầu nhô.
+313. Trụ sồi chân mộng
+    Cột gỗ có đế và đầu bản rộng.
+314. Cột tre bó bốn thanh
+    Bốn thanh tre vuông và hai đai buộc, có khe thật.
+315. Trụ đồng thiếc chân đế
+    Thân hẹp trong hai đế vuông nổi.
+316. Cột gốm ngọc ba đai
+    Ba đai men xanh cách nhau bằng thân nhỏ.
+317. Trụ đôi gỗ hun
+    Hai trụ song song nối bởi đầu và chân.
+318. Cột bục đầu thau
+    Bục vuông có thân thắt và mặt trưng bày rộng.
+
+LAN CAN & KHUNG
+319. Lan can sồi hai thanh
+    Hai cột và hai thanh ngang dọc X, không tự nối.
+320. Lan can tre ba thanh
+    Ba thanh ngang cùng hai cột tre, trục X cố định.
+321. Song sắt bốn thanh
+    Bốn song đứng trong khung, có khoảng trống thật.
+322. Khung cửa sổ gỗ tuyết tùng
+    Khung chữ nhật rỗng giữa, cố định mặt XY.
+323. Khung cửa chữ thập bạch dương
+    Khung chia bốn ô bằng hai thanh giữa.
+324. Bình phong mây nan ngang
+    Năm nan ngang và hai biên đứng, không mở/đóng.
+325. Lan can đồng gờ thấp
+    Bốn trụ ngắn đỡ tay vịn, trục X.
+326. Tường thấp nắp phiến
+    Thân tường hẹp và nắp rộng cao một khối.
+327. Vòm cổng sa thạch bậc
+    Hai chân và vòm bậc có khoảng rỗng giữa.
+328. Ô thoáng khung giấy
+    Khung dày với ba ô hở, dùng phía trên cửa.
+
+NỘI THẤT
+329. Bàn sồi bốn chân trang trí
+    Mặt bàn cao, bốn chân; không phải bàn chế tạo.
+330. Bàn đá hai trụ trang trí
+    Mặt cẩm thạch trên hai trụ bên, không chứa đồ.
+331. Ghế băng óc chó trang trí
+    Mặt ghế và hai chân tấm; không có thao tác ngồi.
+332. Ghế tựa bạch dương trang trí
+    Bốn chân, mặt ghế và lưng ở −Z; không ngồi được.
+333. Đôn tre thấp trang trí
+    Mặt đôn thấp trên bốn chân có khoảng trống.
+334. Kệ tuyết tùng ba tầng
+    Ba mặt kệ và hai thành; chỉ để xây trang trí.
+335. Giá kê đồng hai chân
+    Hai chân tấm và thanh mặt hẹp cho xưởng.
+336. Ghế mây mặt dày trang trí
+    Mặt đan dày với chân thấp, không có nội dung chứa.
+337. Quầy ván thuyền trang trí
+    Mặt quầy rộng, vách trước và chân sau.
+338. Giá trưng bày viền thau
+    Bục ba tầng cho vật trang trí do người chơi đặt.
+
+CHI TIẾT & VƯỜN
+339. Bồn gốm vuông rỗng
+    Bốn thành và đáy có lòng rỗng; không tự trồng cây.
+340. Máng gốm ngọc rỗng
+    Máng thấp dọc X, chỉ là hình khối trang trí.
+341. Con sơn sa thạch bậc
+    Giá đỡ thu bậc bám phía −Z, đặt dưới mái.
+342. Vành ống khói phiến
+    Bốn vách dày và lỗ giữa thật; không sinh khói.
+343. Chóp thau phân tầng
+    Bốn tầng vuông thu nhỏ làm đỉnh cổng.
+344. Bệ cẩm thạch ba tầng
+    Bệ thấp rộng, thân thu và mặt trên vuông.
+345. Cửa gió đồng nan thẳng
+    Khung thấp và năm nan dọc có khe thật.
+346. Mái hiên rơm giật cấp
+    Ba bản mái giật cao về −Z, không có vải động.
+347. Cụm đá bước ba viên
+    Ba viên vuông thấp tách nhau, khe va chạm khớp hình.
+348. Khung kiện gỗ thoáng
+    Khung cạnh hở có đáy, không phải rương chứa đồ.

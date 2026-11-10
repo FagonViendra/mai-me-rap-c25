@@ -1,0 +1,65 @@
+MẢI MÊ RÁP C25 — HƯỚNG DẪN
+Cách mở Xưởng 100 mẫu mới, chọn vật liệu, ghép khối và giữ lại bản đang xây.
+
+1. Vào xưởng để xem và xây ngay
+Từ màn hình đầu, mở “Thế giới & kho cảnh”, tìm “Xưởng 100 mẫu mới” rồi bấm “Chơi Xưởng 100 mẫu mới”. Xưởng có 10 khu, mỗi khu 10 mẫu, nằm ở thế giới chính và mở với chế độ Sáng tạo, bay đã bật. Thanh nhanh có một số mẫu sẵn; ô 9 là tay không.
+
+WASD để di chuyển, chuột để nhìn. F bật hoặc tắt bay; Space để đi lên khi bay, Shift để hạ xuống. E mở túi đồ. Chọn ô thanh nhanh bằng 1–9 hoặc con lăn, rồi chọn một vật phẩm trong túi để đưa vào ô đó. Chuột phải đặt khối, chuột trái đào; chuột giữa lấy khối đang nhìn trong Sáng tạo.
+
+Trứng gọi sinh vật xuất hiện ở ô kề mặt đang nhắm và cần điểm đỡ thật dưới chân. Một mặt thấp có thể bị từ chối nếu sinh vật sẽ lơ lửng; khi bị từ chối, trứng không bị trừ. Khả năng đặt trên khung hoặc vành phụ thuộc hình dạng nền, kích thước từng loài và khoảng trống xung quanh. Kiểm tra phần hỗ trợ này hiện giới hạn ở mức CPU.
+
+Mỗi lần bấm Chơi một cảnh có sẵn sẽ thử tạo một bản riêng. Muốn chơi tiếp bản đã xây, dùng “Đến thế giới đã lưu” và mở đúng bản trong danh sách. Tên cảnh trên thẻ không phải cam kết tên hàng lưu được tự đổi theo cảnh; bạn có thể dùng chức năng đặt tên của danh sách thế giới.
+
+2. Tìm đúng nhóm vật liệu
+Trong E, chọn tab “Tất cả” hoặc “Khối”, rồi dùng “Bộ sưu tập”:
+• 100 mẫu mới: toàn bộ bộ sưu tập C25.
+• Khối bề mặt: 40 mẫu đá, gốm, gỗ, sợi đan, kim loại và mái.
+• Phiến thấp: 10 mẫu nửa khối.
+• Bậc thang: 10 mẫu hai bậc.
+• Cột: 10 mẫu thân, đế và đầu cột.
+• Lan can & khung: 10 mẫu thanh chắn, bình phong và ô thoáng.
+• Nội thất: 10 mẫu bàn, ghế, kệ và quầy trang trí.
+• Chi tiết & vườn: 10 mẫu bồn, máng, gờ, chóp, bệ và đá cảnh.
+
+Bộ sưu tập kết hợp với ô tìm tên và “Chỉ vật liệu đã ghim”. Vì vậy, có thể thấy ít hơn số mẫu của nhóm nếu bạn còn từ khóa hoặc bộ lọc ghim. “Bỏ lọc” chỉ đưa Bộ sưu tập về “Tất cả vật phẩm”; muốn xem lại toàn bộ, xóa cả từ tìm và bỏ chọn bộ lọc ghim. Tìm vật phẩm dựa trên tên và nhận cả chữ có dấu lẫn không dấu, ví dụ “gỗ sồi” hoặc “go soi”. Trong Sinh tồn, danh sách còn giới hạn theo vật phẩm thực có trong túi.
+
+Bấm chọn một mẫu để đọc cách dùng ở vùng “Thông tin vật phẩm”. Khi trỏ chuột qua mẫu khác, dòng thông tin có thể chuyển sang tên mẫu đang trỏ.
+
+3. Cách ghép các mẫu mới
+100 mẫu là 100 tổ hợp vật liệu và hình dáng, gồm 40 khối đầy và 60 mẫu ghép từ các phần khối nhỏ. Bộ sưu tập dùng 50 lớp texture mới, vẽ trực tiếp trên lưới 24×24. Các mẫu nửa khối, bậc và nhiều món nội thất dùng chung họ chất liệu để dễ xây thành bộ.
+
+Các hình mới có hướng cố định. Bậc thấp ở phía +Z, cao ở phía −Z; mẫu không tự xoay theo hướng nhìn. Lan can và khung không tự nối sang khối hàng xóm. Bàn, ghế, kệ và chậu là đồ xây trang trí: ghế không có thao tác ngồi, kệ không phải kho chứa, chậu không tự trồng hoặc làm cây lớn. Xem ghi chú của từng mẫu để chọn hướng đặt và kiểu ghép phù hợp.
+
+Ở nền khô, khi đi bộ và đã tắt bay, nhân vật có thể bước lên nửa khối nếu đang đứng trên nền và có đủ khoảng trống phía trên. Đi từ phía bậc thấp; khối cao nguyên một khối hoặc trần thấp vẫn có thể chặn lối.
+
+Để xem texture 24×24, mở Esc → Thiết lập → Gói chất liệu → “Chi tiết 24×24”. “Cổ điển 16×16” là gói tương thích riêng. Ảnh texture gốc có 24×24 pixel; icon túi đồ và hình trên màn hình có thể lớn hơn để dễ nhìn.
+
+4. Tám cảnh có sẵn
+Khám phá thêm: Xóm ven hồ; Vườn trên cao; Khu chợ và xưởng; Nông trại ven rừng; Xưởng 100 mẫu mới.
+Vực giới & xưởng: Vực Lửa; Thiên Giới; Xưởng & vườn trưng bày.
+
+Bảy cảnh cũ giữ nguyên dữ liệu nguồn. Xưởng 100 mẫu mới là cảnh bổ sung thứ tám. Tất cả dùng cùng luồng tạo bản riêng của Kho cảnh. Nông trại có nhà kho, chuồng mở và luống đất canh tác trống; việc mở cảnh không đồng nghĩa đã kiểm chứng trồng, thu hoạch hoặc nung trong C25.
+
+5. Ba thử thách Hộ Vệ
+Ảnh Hộ Vệ trong gallery dùng trạng thái tạm dừng để nhìn rõ thân và dấu báo đòn; ảnh tĩnh không thể hiện nhịp chiến đấu hoặc thời điểm sát thương.
+
+Nhấn J để mở Sổ Gió, chọn trang “Hộ Vệ”, rồi chọn một trong ba tên. Dòng “Ấn tiếp theo” cho biết Hộ Vệ đã chọn và cách né. Đóng bảng, cầm “Ấn gọi Hộ Vệ” và dùng chuột phải lên nền ở thế giới chính. Chọn nền khô 3×3, phía trên trống ít nhất 4 khối; lùi khoảng 3 khối để chừa chỗ. Trò chơi báo lý do nếu vị trí chưa phù hợp hoặc thử thách trước chưa xong.
+
+• Hộ Vệ Lăng Kính: tránh ra ngoài vòng sáng trước khi vòng bùng lên. Qua các giai đoạn, vòng có thể khóa vị trí bạn vừa đứng và thời gian báo ngắn hơn.
+• Hộ Vệ Thạch Giáp: đòn đánh nằm trong vành giữa hai đường viền. Tâm vòng hoặc vùng ngoài vành là hướng tránh; đừng đứng trong dải vành đang báo.
+• Hộ Vệ Phong Dực: dải gió khóa hướng khi xuất hiện. Né sang bên khỏi hai cạnh dải; chỉ lùi thẳng có thể vẫn nằm trong vùng đánh.
+
+Cả ba có 96 máu và ba giai đoạn. Theo dõi tên đòn, lời nhắc và thời gian báo trên HUD. Đòn đánh không phá địa hình. Sinh tồn dùng ấn và nhận 3 Lõi lăng kính, 6 Ngọc trao đổi khi thắng; nếu túi chưa đủ chỗ, phần thưởng ở trạng thái chờ. Sáng tạo không nhận phần thưởng Sinh tồn. Khi đang có Hộ Vệ hoặc phần thưởng chưa nhận, hãy giải quyết lượt đó trước khi chọn/gọi lượt mới.
+
+6. Giữ lại bản đang xây
+Dùng Esc → Lưu ngay khi cần, và Esc → Xuất thế giới → Tải JSON để giữ một bản dự phòng ngoài trình duyệt. Dùng “Nhập tệp thế giới” để nhập tệp JSON khi muốn mở lại một bản sao.
+
+Để trở lại Kho cảnh từ phiên đang chơi, nhấn Esc → “Về màn hình đầu” → “Thế giới & kho cảnh”. Nút về màn hình đầu thử lưu trước; nếu lưu thất bại, game giữ phiên đang mở và hiện bảng dự phòng để bạn tải JSON.
+
+Nếu game báo đã mở cảnh nhưng chưa lưu được, hoặc chưa xác nhận được bản lưu, giữ trang đang mở và xuất JSON trước khi rời trang. Không bấm Chơi lặp lại để thử ghi đè. Kho cảnh có thể tạo phiên chơi mới trong bộ nhớ trước khi xác nhận xong việc lưu; thông báo thành công là bước xác nhận riêng.
+
+Tiếp tục bằng cùng trình duyệt và cùng địa chỉ game để thấy đúng dữ liệu lưu của địa chỉ đó. Bản C25 giữ các mã khối cũ và bổ sung mã mới; các bản game cũ chưa được mở rộng không phải trình đọc phù hợp cho thế giới có khối C25.
+
+Giải nén toàn bộ gói GAME rồi chạy CHOI_GAME.cmd. Giữ MAI_ME_RAP.html, open_or_serve.py và serve.py trong cùng thư mục. Bộ khởi chạy cần Python 3 trên máy. Chơi tiếp bằng cùng trình duyệt và cùng địa chỉ mà bộ khởi chạy mở để dùng đúng dữ liệu đã lưu.
+
+DANH_MUC_100_KHOI_C25_V1.txt chứa tên, mã và cách dùng từng mẫu; HUONG_DAN_BUILD_C25_V1.txt hướng dẫn dựng lại từ nguồn. MMR_ANH_MOI_C25.html là gallery đi kèm; chú thích phân biệt ảnh giao diện, góc nhìn trong thế giới, bảng texture/icon của game và ảnh Hộ Vệ tạm dừng.

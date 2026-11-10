@@ -1,0 +1,9052 @@
+{
+  "schema": 1,
+  "version": "product-c25-crafted-blocks-contract-v2",
+  "status": "SOURCE_DEFINED_RUNTIME_PENDING",
+  "namespace": "globalThis.VoxelC25Crafted",
+  "source": "src/crafted-blocks.js",
+  "registration": "src/catalog.js",
+  "idRange": [
+    249,
+    348
+  ],
+  "registryCap": 511,
+  "previousMaxId": 248,
+  "oldIdsPreserved": true,
+  "faceOrder": [
+    "+X",
+    "-X",
+    "+Y",
+    "-Y",
+    "+Z",
+    "-Z"
+  ],
+  "texturePolicy": {
+    "nativeGenerationGrid": [
+      24,
+      24
+    ],
+    "nativeBufferBytes": 2304,
+    "newLayers": 50,
+    "totalLayers": 220,
+    "baseMotifs": 40,
+    "matchingTopMotifs": 10,
+    "legacy16": "nearest downsample compatibility from native24; not called native24"
+  },
+  "shapePolicy": {
+    "coordinates": "integer sixteenths in [0,16], positive volume and disjoint interiors",
+    "maxParts": 9,
+    "consumerRequired": [
+      "mesh",
+      "physical collision",
+      "ray gap/hit/normal",
+      "selection outline",
+      "held silhouette",
+      "icon silhouette",
+      "shape-correct shadow"
+    ],
+    "fixedAxes": true,
+    "oldWorktableSemanticsUnchanged": true
+  },
+  "mechanics": "Creative construction/decor using native mining/drop/save. No new recipes, active containers, seating, crop growth, auto-connecting fences or rotation state.",
+  "defs": [
+    {
+      "id": 249,
+      "key": "rusticated_sandstone",
+      "name": "Sa thạch chạm viền",
+      "color": "#c7ac78",
+      "tool": "pick",
+      "hardness": 2.5,
+      "useNote": "Khối nền sáng với mạch ngang lệch và viền đá đục sâu.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 249,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone"
+      ]
+    },
+    {
+      "id": 250,
+      "key": "granite_fan_paving",
+      "name": "Đá hoa cương lát quạt",
+      "color": "#8a9696",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Các cung đá xếp nan quạt làm sân và lối rẽ.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 250,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving"
+      ]
+    },
+    {
+      "id": 251,
+      "key": "limestone_longcourse",
+      "name": "Đá vôi hàng dài",
+      "color": "#c9c9af",
+      "tool": "pick",
+      "hardness": 2.6,
+      "useNote": "Hàng đá dài xen viên ngắn, mạch vữa hẹp cho tường.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 251,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse"
+      ]
+    },
+    {
+      "id": 252,
+      "key": "basalt_octagon_inlay",
+      "name": "Bazan khảm bát giác",
+      "color": "#4d5759",
+      "tool": "pick",
+      "hardness": 3.2,
+      "useNote": "Bát giác bazan viền ngà và chốt đồng ở giao điểm.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 252,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay"
+      ]
+    },
+    {
+      "id": 253,
+      "key": "ribbed_travertine",
+      "name": "Đá travertine sọc rỗ",
+      "color": "#c7b69a",
+      "tool": "pick",
+      "hardness": 2.7,
+      "useNote": "Dải khoáng ngang và hốc nhỏ thành lớp cho bậc và cột.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 253,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine"
+      ]
+    },
+    {
+      "id": 254,
+      "key": "slate_chevron",
+      "name": "Đá phiến ghép chữ V",
+      "color": "#66717c",
+      "tool": "pick",
+      "hardness": 2.9,
+      "useNote": "Hai dải phiến xiên gặp nhau thành chữ V rõ.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 254,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_slate_chevron",
+        "c25_slate_chevron",
+        "c25_slate_chevron",
+        "c25_slate_chevron",
+        "c25_slate_chevron",
+        "c25_slate_chevron"
+      ]
+    },
+    {
+      "id": 255,
+      "key": "river_pebble_panel",
+      "name": "Mảng cuội suối ghép",
+      "color": "#a89e89",
+      "tool": "pick",
+      "hardness": 2.4,
+      "useNote": "Cuội tròn nhiều cỡ nằm trong nền vữa tối.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 255,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_river_pebble_panel",
+        "c25_river_pebble_panel",
+        "c25_river_pebble_panel",
+        "c25_river_pebble_panel",
+        "c25_river_pebble_panel",
+        "c25_river_pebble_panel"
+      ]
+    },
+    {
+      "id": 256,
+      "key": "branch_white_marble",
+      "name": "Cẩm thạch trắng vân nhánh",
+      "color": "#dddcd0",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Mặt trắng yên với một vân xám chia nhánh, dùng cho sảnh.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 256,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble"
+      ]
+    },
+    {
+      "id": 257,
+      "key": "fractured_green_marble",
+      "name": "Cẩm thạch xanh vân gãy",
+      "color": "#527f73",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Mạch kem góc cạnh cắt qua nền xanh đậm.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 257,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_fractured_green_marble",
+        "c25_fractured_green_marble",
+        "c25_fractured_green_marble",
+        "c25_fractured_green_marble",
+        "c25_fractured_green_marble",
+        "c25_fractured_green_marble"
+      ]
+    },
+    {
+      "id": 258,
+      "key": "rose_strata_stone",
+      "name": "Đá hồng phân tầng",
+      "color": "#b98476",
+      "tool": "pick",
+      "hardness": 2.5,
+      "useNote": "Dải đá hồng lệch nhịp với lớp vàng nhạt mỏng.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 258,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_rose_strata_stone",
+        "c25_rose_strata_stone",
+        "c25_rose_strata_stone",
+        "c25_rose_strata_stone",
+        "c25_rose_strata_stone",
+        "c25_rose_strata_stone"
+      ]
+    },
+    {
+      "id": 259,
+      "key": "fossil_limestone",
+      "name": "Đá vôi chạm hóa thạch",
+      "color": "#b7ae94",
+      "tool": "pick",
+      "hardness": 2.6,
+      "useNote": "Vỏ xoắn và gân lá khắc riêng trên đá, không phải quặng.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 259,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_fossil_limestone",
+        "c25_fossil_limestone",
+        "c25_fossil_limestone",
+        "c25_fossil_limestone",
+        "c25_fossil_limestone",
+        "c25_fossil_limestone"
+      ]
+    },
+    {
+      "id": 260,
+      "key": "cobalt_wave_ceramic",
+      "name": "Gốm lam sóng nước",
+      "color": "#3e6f99",
+      "tool": "pick",
+      "hardness": 2.2,
+      "useNote": "Ba hàng sóng men lam viền ngà cho hồ và mái hiên.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 260,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic"
+      ]
+    },
+    {
+      "id": 261,
+      "key": "terracotta_sun_disk",
+      "name": "Gốm đất mặt trời",
+      "color": "#b7754a",
+      "tool": "pick",
+      "hardness": 2.2,
+      "useNote": "Đĩa mặt trời giữa ô, tia rộng và vòng chấm bao ngoài.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 261,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk"
+      ]
+    },
+    {
+      "id": 262,
+      "key": "ivory_fan_relief",
+      "name": "Gốm ngà phù điêu quạt",
+      "color": "#dacead",
+      "tool": "pick",
+      "hardness": 2.3,
+      "useNote": "Nan quạt bán tròn nổi bằng ba sắc men ngà.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 262,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_ivory_fan_relief",
+        "c25_ivory_fan_relief",
+        "c25_ivory_fan_relief",
+        "c25_ivory_fan_relief",
+        "c25_ivory_fan_relief",
+        "c25_ivory_fan_relief"
+      ]
+    },
+    {
+      "id": 263,
+      "key": "jade_bamboo_tile",
+      "name": "Gốm ngọc đốt trúc",
+      "color": "#688b69",
+      "tool": "pick",
+      "hardness": 2.3,
+      "useNote": "Ba thân trúc có đốt và lá chéo, họa tiết tĩnh.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 263,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile"
+      ]
+    },
+    {
+      "id": 264,
+      "key": "indigo_star_mosaic",
+      "name": "Khảm chàm sao tám cánh",
+      "color": "#626c9b",
+      "tool": "pick",
+      "hardness": 2.5,
+      "useNote": "Sao tám cánh men ngà trên nền chàm với góc đất nung.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 264,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_indigo_star_mosaic",
+        "c25_indigo_star_mosaic",
+        "c25_indigo_star_mosaic",
+        "c25_indigo_star_mosaic",
+        "c25_indigo_star_mosaic",
+        "c25_indigo_star_mosaic"
+      ]
+    },
+    {
+      "id": 265,
+      "key": "ochre_basket_brick",
+      "name": "Gạch vàng đan rổ",
+      "color": "#bb9256",
+      "tool": "pick",
+      "hardness": 2.5,
+      "useNote": "Cặp gạch dài xoay vuông góc như mối đan cho đường đi.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 265,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick"
+      ]
+    },
+    {
+      "id": 266,
+      "key": "plum_octagon_ceramic",
+      "name": "Gốm mận ô bát giác",
+      "color": "#8e657d",
+      "tool": "pick",
+      "hardness": 2.2,
+      "useNote": "Ô bát giác men mận và hình thoi ngà phân cách.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 266,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_plum_octagon_ceramic",
+        "c25_plum_octagon_ceramic",
+        "c25_plum_octagon_ceramic",
+        "c25_plum_octagon_ceramic",
+        "c25_plum_octagon_ceramic",
+        "c25_plum_octagon_ceramic"
+      ]
+    },
+    {
+      "id": 267,
+      "key": "chalk_flower_rosette",
+      "name": "Gạch hoa cánh phấn",
+      "color": "#c4bda6",
+      "tool": "pick",
+      "hardness": 2.2,
+      "useNote": "Hoa bốn cánh xanh xám, tâm đất đỏ trên nền ngà.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 267,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_chalk_flower_rosette",
+        "c25_chalk_flower_rosette",
+        "c25_chalk_flower_rosette",
+        "c25_chalk_flower_rosette",
+        "c25_chalk_flower_rosette",
+        "c25_chalk_flower_rosette"
+      ]
+    },
+    {
+      "id": 268,
+      "key": "clinker_soldiercourse",
+      "name": "Gạch sẫm hàng đứng",
+      "color": "#815749",
+      "tool": "pick",
+      "hardness": 2.7,
+      "useNote": "Gạch đứng có đầu sáng, ghép viền tường và cửa.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 268,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_clinker_soldiercourse",
+        "c25_clinker_soldiercourse",
+        "c25_clinker_soldiercourse",
+        "c25_clinker_soldiercourse",
+        "c25_clinker_soldiercourse",
+        "c25_clinker_soldiercourse"
+      ]
+    },
+    {
+      "id": 269,
+      "key": "pegged_oak_panel",
+      "name": "Gỗ sồi ghép chốt",
+      "color": "#a58150",
+      "tool": "axe",
+      "hardness": 1.6,
+      "useNote": "Ván rộng có chốt vuông và đường mộng rõ.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 269,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel"
+      ]
+    },
+    {
+      "id": 270,
+      "key": "bamboo_zigzag_weave",
+      "name": "Tre đan zích zắc",
+      "color": "#c2b16d",
+      "tool": "axe",
+      "hardness": 1.2,
+      "useNote": "Nan tre sáng tối đan zích zắc, có mép buộc.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 270,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave"
+      ]
+    },
+    {
+      "id": 271,
+      "key": "walnut_herringbone",
+      "name": "Gỗ óc chó xương cá",
+      "color": "#775840",
+      "tool": "axe",
+      "hardness": 1.6,
+      "useNote": "Thanh nâu sẫm ghép xương cá, thớ chạy theo thanh.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 271,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_walnut_herringbone",
+        "c25_walnut_herringbone",
+        "c25_walnut_herringbone_cap",
+        "c25_walnut_herringbone_cap",
+        "c25_walnut_herringbone",
+        "c25_walnut_herringbone"
+      ]
+    },
+    {
+      "id": 272,
+      "key": "cedar_diagonal_frame",
+      "name": "Gỗ tuyết tùng giằng chéo",
+      "color": "#a77659",
+      "tool": "axe",
+      "hardness": 1.6,
+      "useNote": "Khung viền và giằng chữ X tách khỏi nền ván.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 272,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame"
+      ]
+    },
+    {
+      "id": 273,
+      "key": "birch_square_joinery",
+      "name": "Gỗ bạch dương mộng vuông",
+      "color": "#c7b788",
+      "tool": "axe",
+      "hardness": 1.4,
+      "useNote": "Các khung vuông lồng nhau với chốt nhỏ ở góc.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 273,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery"
+      ]
+    },
+    {
+      "id": 274,
+      "key": "chestnut_scallop_shingle",
+      "name": "Vảy gỗ dẻ lợp mái",
+      "color": "#9d7450",
+      "tool": "axe",
+      "hardness": 1.5,
+      "useNote": "Hai hàng vảy tròn chồng mí có đinh trên đỉnh.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 274,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_chestnut_scallop_shingle",
+        "c25_chestnut_scallop_shingle",
+        "c25_chestnut_scallop_shingle_cap",
+        "c25_chestnut_scallop_shingle_cap",
+        "c25_chestnut_scallop_shingle",
+        "c25_chestnut_scallop_shingle"
+      ]
+    },
+    {
+      "id": 275,
+      "key": "rattan_hex_weave",
+      "name": "Mây đan mắt lục giác",
+      "color": "#bba06a",
+      "tool": "axe",
+      "hardness": 1,
+      "useNote": "Nan mây tạo mắt lục giác màu tối trên khối kín.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 275,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave_cap",
+        "c25_rattan_hex_weave_cap",
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave"
+      ]
+    },
+    {
+      "id": 276,
+      "key": "charred_parallel_wood",
+      "name": "Gỗ hun rãnh dọc",
+      "color": "#4c4c44",
+      "tool": "axe",
+      "hardness": 1.6,
+      "useNote": "Rãnh dọc đen than và các vết nứt ngắn, bề mặt tĩnh.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 276,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_charred_parallel_wood",
+        "c25_charred_parallel_wood",
+        "c25_charred_parallel_wood_cap",
+        "c25_charred_parallel_wood_cap",
+        "c25_charred_parallel_wood",
+        "c25_charred_parallel_wood"
+      ]
+    },
+    {
+      "id": 277,
+      "key": "shipwood_nailboard",
+      "name": "Ván thuyền ghép đinh",
+      "color": "#849185",
+      "tool": "axe",
+      "hardness": 1.5,
+      "useNote": "Ván bạc màu theo hàng, đầu đinh sẫm và thớ dài.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 277,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_shipwood_nailboard",
+        "c25_shipwood_nailboard",
+        "c25_shipwood_nailboard_cap",
+        "c25_shipwood_nailboard_cap",
+        "c25_shipwood_nailboard",
+        "c25_shipwood_nailboard"
+      ]
+    },
+    {
+      "id": 278,
+      "key": "paper_timber_lattice",
+      "name": "Vách giấy ô gỗ",
+      "color": "#ddd2af",
+      "tool": "axe",
+      "hardness": 1,
+      "useNote": "Ô giấy kem trong lưới gỗ, khối đầy không mở được.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 278,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_paper_timber_lattice",
+        "c25_paper_timber_lattice",
+        "c25_paper_timber_lattice_cap",
+        "c25_paper_timber_lattice_cap",
+        "c25_paper_timber_lattice",
+        "c25_paper_timber_lattice"
+      ]
+    },
+    {
+      "id": 279,
+      "key": "copper_standing_seam",
+      "name": "Đồng mái gờ đứng",
+      "color": "#b0774e",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Hai gờ đứng, mép tôn gập và đường đồng sáng.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 279,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam"
+      ]
+    },
+    {
+      "id": 280,
+      "key": "zinc_diamond_roof",
+      "name": "Kẽm mái hình thoi",
+      "color": "#8c9ea1",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Tấm kẽm ghép thoi có gờ sáng ở hai cạnh.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 280,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_zinc_diamond_roof",
+        "c25_zinc_diamond_roof",
+        "c25_zinc_diamond_roof",
+        "c25_zinc_diamond_roof",
+        "c25_zinc_diamond_roof",
+        "c25_zinc_diamond_roof"
+      ]
+    },
+    {
+      "id": 281,
+      "key": "iron_corrugated_panel",
+      "name": "Sắt tấm sóng vuông",
+      "color": "#697c81",
+      "tool": "pick",
+      "hardness": 3.4,
+      "useNote": "Sóng vuông rộng xen dải tối, dùng cho mái xưởng.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 281,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel"
+      ]
+    },
+    {
+      "id": 282,
+      "key": "brass_rivet_plaque",
+      "name": "Đồng thau viền đinh",
+      "color": "#b7a056",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Tấm thau có viền kép và bốn đinh lớn.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 282,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque"
+      ]
+    },
+    {
+      "id": 283,
+      "key": "hammered_bronze",
+      "name": "Đồng thiếc gõ búa",
+      "color": "#947850",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Các vết búa tròn lệch hàng với phản sáng tiết chế.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 283,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze"
+      ]
+    },
+    {
+      "id": 284,
+      "key": "verdigris_sunken_square",
+      "name": "Đồng xanh ô lõm",
+      "color": "#568b80",
+      "tool": "pick",
+      "hardness": 3,
+      "useNote": "Ô vuông chìm và bốn góc đồng nâu, không có lỗ xuyên.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 284,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_verdigris_sunken_square",
+        "c25_verdigris_sunken_square",
+        "c25_verdigris_sunken_square",
+        "c25_verdigris_sunken_square",
+        "c25_verdigris_sunken_square",
+        "c25_verdigris_sunken_square"
+      ]
+    },
+    {
+      "id": 285,
+      "key": "slate_ridge_course",
+      "name": "Ngói phiến hàng gờ",
+      "color": "#596779",
+      "tool": "pick",
+      "hardness": 2.7,
+      "useNote": "Mí ngói bản rộng, gờ nối dọc xen kẽ.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 285,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course"
+      ]
+    },
+    {
+      "id": 286,
+      "key": "bound_straw_thatch",
+      "name": "Mái rơm buộc lạt",
+      "color": "#bca05a",
+      "tool": "axe",
+      "hardness": 1,
+      "useNote": "Rơm chạy dọc thành bó, hai hàng lạt ngang rõ.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 0,
+      "material": 286,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch"
+      ]
+    },
+    {
+      "id": 287,
+      "key": "terracotta_overlap_tile",
+      "name": "Ngói đất chồng mí",
+      "color": "#ad684e",
+      "tool": "pick",
+      "hardness": 2.4,
+      "useNote": "Ngói đất bản cong biểu diễn bằng mí và đường gờ.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 287,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_terracotta_overlap_tile",
+        "c25_terracotta_overlap_tile",
+        "c25_terracotta_overlap_tile",
+        "c25_terracotta_overlap_tile",
+        "c25_terracotta_overlap_tile",
+        "c25_terracotta_overlap_tile"
+      ]
+    },
+    {
+      "id": 288,
+      "key": "blue_glazed_roof",
+      "name": "Ngói men lam mũi tên",
+      "color": "#557f9c",
+      "tool": "pick",
+      "hardness": 2.5,
+      "useNote": "Các mũi ngói men lam chồng thành hàng so le.",
+      "family": "surface",
+      "shape": "cube",
+      "solid": true,
+      "opaque": true,
+      "render": "opaque",
+      "minPickTier": 1,
+      "material": 288,
+      "fixedAxis": "XYZ",
+      "faceKeys": [
+        "c25_blue_glazed_roof",
+        "c25_blue_glazed_roof",
+        "c25_blue_glazed_roof",
+        "c25_blue_glazed_roof",
+        "c25_blue_glazed_roof",
+        "c25_blue_glazed_roof"
+      ]
+    },
+    {
+      "id": 289,
+      "key": "sandstone_half_slab",
+      "name": "Nửa tấm sa thạch viền",
+      "material": 249,
+      "form": "slab",
+      "useNote": "Lát bậc thấp và bờ sân cao nửa khối.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#c7ac78",
+      "tool": "pick",
+      "hardness": 2.5,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone"
+      ]
+    },
+    {
+      "id": 290,
+      "key": "granite_fan_slab",
+      "name": "Nửa tấm đá lát quạt",
+      "material": 250,
+      "form": "slab",
+      "useNote": "Ghép lối đi thấp, giữ họa tiết nan quạt.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#8a9696",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving"
+      ]
+    },
+    {
+      "id": 291,
+      "key": "travertine_slab",
+      "name": "Nửa tấm travertine",
+      "material": 253,
+      "form": "slab",
+      "useNote": "Bậc thấp với lớp khoáng ngang lộ ở cạnh.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#c7b69a",
+      "tool": "pick",
+      "hardness": 2.7,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine"
+      ]
+    },
+    {
+      "id": 292,
+      "key": "white_marble_slab",
+      "name": "Nửa tấm cẩm thạch trắng",
+      "material": 256,
+      "form": "slab",
+      "useNote": "Mặt bàn hoặc sàn thấp có vân nhánh.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#dddcd0",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble"
+      ]
+    },
+    {
+      "id": 293,
+      "key": "cobalt_wave_slab",
+      "name": "Nửa tấm gốm sóng lam",
+      "material": 260,
+      "form": "slab",
+      "useNote": "Viền hồ và mái hiên thấp bằng gốm.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#3e6f99",
+      "tool": "pick",
+      "hardness": 2.2,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic"
+      ]
+    },
+    {
+      "id": 294,
+      "key": "basket_brick_slab",
+      "name": "Nửa tấm gạch đan rổ",
+      "material": 265,
+      "form": "slab",
+      "useNote": "Đường đi nửa khối với mối đan rõ.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#bb9256",
+      "tool": "pick",
+      "hardness": 2.5,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick"
+      ]
+    },
+    {
+      "id": 295,
+      "key": "pegged_oak_slab",
+      "name": "Nửa tấm sồi ghép chốt",
+      "material": 269,
+      "form": "slab",
+      "useNote": "Sàn gỗ thấp hoặc mái hiên mỏng.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#a58150",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel"
+      ]
+    },
+    {
+      "id": 296,
+      "key": "birch_joinery_slab",
+      "name": "Nửa tấm bạch dương mộng",
+      "material": 273,
+      "form": "slab",
+      "useNote": "Sàn sáng giữ các khung mộng vuông.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#c7b788",
+      "tool": "axe",
+      "hardness": 1.4,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery"
+      ]
+    },
+    {
+      "id": 297,
+      "key": "copper_seam_slab",
+      "name": "Nửa tấm đồng gờ",
+      "material": 279,
+      "form": "slab",
+      "useNote": "Bậc xưởng và mép mái đồng nửa khối.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#b0774e",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam"
+      ]
+    },
+    {
+      "id": 298,
+      "key": "straw_thatch_slab",
+      "name": "Nửa tấm mái rơm",
+      "material": 286,
+      "form": "slab",
+      "useNote": "Mái rơm mỏng cho nhà vườn.",
+      "family": "slab",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "color": "#bca05a",
+      "tool": "axe",
+      "hardness": 1,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch"
+      ]
+    },
+    {
+      "id": 299,
+      "key": "sandstone_stair",
+      "name": "Bậc sa thạch chạm viền",
+      "material": 249,
+      "form": "stair",
+      "useNote": "Bậc thấp ở +Z, cao ở −Z; hướng đặt cố định.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#c7ac78",
+      "tool": "pick",
+      "hardness": 2.5,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone"
+      ]
+    },
+    {
+      "id": 300,
+      "key": "granite_fan_stair",
+      "name": "Bậc đá hoa cương lát quạt",
+      "material": 250,
+      "form": "stair",
+      "useNote": "Bậc sân quạt, phía cao cố định −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#8a9696",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving"
+      ]
+    },
+    {
+      "id": 301,
+      "key": "travertine_stair",
+      "name": "Bậc travertine sọc",
+      "material": 253,
+      "form": "stair",
+      "useNote": "Mặt bậc đá kem phân tầng, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#c7b69a",
+      "tool": "pick",
+      "hardness": 2.7,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine",
+        "c25_ribbed_travertine"
+      ]
+    },
+    {
+      "id": 302,
+      "key": "white_marble_stair",
+      "name": "Bậc cẩm thạch vân nhánh",
+      "material": 256,
+      "form": "stair",
+      "useNote": "Cầu thang sảnh trắng, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#dddcd0",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble"
+      ]
+    },
+    {
+      "id": 303,
+      "key": "cobalt_wave_stair",
+      "name": "Bậc gốm sóng lam",
+      "material": 260,
+      "form": "stair",
+      "useNote": "Bậc gốm xanh hoặc mái bậc, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#3e6f99",
+      "tool": "pick",
+      "hardness": 2.2,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic",
+        "c25_cobalt_wave_ceramic"
+      ]
+    },
+    {
+      "id": 304,
+      "key": "basket_brick_stair",
+      "name": "Bậc gạch vàng đan rổ",
+      "material": 265,
+      "form": "stair",
+      "useNote": "Bậc ngoài sân vàng ấm, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#bb9256",
+      "tool": "pick",
+      "hardness": 2.5,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick",
+        "c25_ochre_basket_brick"
+      ]
+    },
+    {
+      "id": 305,
+      "key": "pegged_oak_stair",
+      "name": "Bậc sồi ghép chốt",
+      "material": 269,
+      "form": "stair",
+      "useNote": "Bậc hiên gỗ, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#a58150",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel"
+      ]
+    },
+    {
+      "id": 306,
+      "key": "birch_joinery_stair",
+      "name": "Bậc bạch dương mộng vuông",
+      "material": 273,
+      "form": "stair",
+      "useNote": "Bậc gỗ sáng, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#c7b788",
+      "tool": "axe",
+      "hardness": 1.4,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery"
+      ]
+    },
+    {
+      "id": 307,
+      "key": "copper_seam_stair",
+      "name": "Bậc đồng mái gờ",
+      "material": 279,
+      "form": "stair",
+      "useNote": "Bậc xưởng hoặc mái đồng, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#b0774e",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam"
+      ]
+    },
+    {
+      "id": 308,
+      "key": "straw_thatch_stair",
+      "name": "Bậc mái rơm buộc lạt",
+      "material": 286,
+      "form": "stair",
+      "useNote": "Ghép mái rơm bậc, cao ở −Z.",
+      "family": "stair",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "high:-Z",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "color": "#bca05a",
+      "tool": "axe",
+      "hardness": 1,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch"
+      ]
+    },
+    {
+      "id": 309,
+      "key": "limestone_cross_column",
+      "name": "Cột đá vôi cạnh vát",
+      "material": 251,
+      "form": "column_cross",
+      "useNote": "Chân và đầu vuông, thân vát bốn cạnh bằng các hộp.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          5,
+          3,
+          3,
+          11,
+          13,
+          13
+        ],
+        [
+          3,
+          3,
+          5,
+          5,
+          13,
+          11
+        ],
+        [
+          11,
+          3,
+          5,
+          13,
+          13,
+          11
+        ],
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          16
+        ]
+      ],
+      "color": "#c9c9af",
+      "tool": "pick",
+      "hardness": 2.6,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse",
+        "c25_limestone_longcourse"
+      ]
+    },
+    {
+      "id": 310,
+      "key": "basalt_tier_column",
+      "name": "Cột bazan đai tầng",
+      "material": 252,
+      "form": "column_tiers",
+      "useNote": "Thân tối, hai đai rộng tạo nhịp cho cổng.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          5,
+          3,
+          5,
+          11,
+          7,
+          11
+        ],
+        [
+          2,
+          7,
+          2,
+          14,
+          9,
+          14
+        ],
+        [
+          5,
+          9,
+          5,
+          11,
+          13,
+          11
+        ],
+        [
+          1,
+          13,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "color": "#4d5759",
+      "tool": "pick",
+      "hardness": 3.2,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay",
+        "c25_basalt_octagon_inlay"
+      ]
+    },
+    {
+      "id": 311,
+      "key": "sandstone_taper_column",
+      "name": "Cột sa thạch thu tầng",
+      "material": 249,
+      "form": "column_taper",
+      "useNote": "Ba tầng thân thu nhỏ dần, đỡ mái và hiên.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          2,
+          3,
+          2,
+          14,
+          6,
+          14
+        ],
+        [
+          3,
+          6,
+          3,
+          13,
+          10,
+          13
+        ],
+        [
+          4,
+          10,
+          4,
+          12,
+          13,
+          12
+        ],
+        [
+          2,
+          13,
+          2,
+          14,
+          16,
+          14
+        ]
+      ],
+      "color": "#c7ac78",
+      "tool": "pick",
+      "hardness": 2.5,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone"
+      ]
+    },
+    {
+      "id": 312,
+      "key": "marble_wall_pilaster",
+      "name": "Trụ ốp cẩm thạch",
+      "material": 256,
+      "form": "pilaster",
+      "useNote": "Trụ nông áp cạnh −Z, có chân và đầu nhô.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          7
+        ],
+        [
+          3,
+          3,
+          0,
+          13,
+          13,
+          4
+        ],
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          7
+        ]
+      ],
+      "color": "#dddcd0",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble"
+      ]
+    },
+    {
+      "id": 313,
+      "key": "oak_footed_post",
+      "name": "Trụ sồi chân mộng",
+      "material": 269,
+      "form": "post",
+      "useNote": "Cột gỗ có đế và đầu bản rộng.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          1,
+          0,
+          1,
+          15,
+          3,
+          15
+        ],
+        [
+          4,
+          3,
+          4,
+          12,
+          13,
+          12
+        ],
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          16
+        ]
+      ],
+      "color": "#a58150",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel"
+      ]
+    },
+    {
+      "id": 314,
+      "key": "bamboo_bundled_column",
+      "name": "Cột tre bó bốn thanh",
+      "material": 270,
+      "form": "bundle",
+      "useNote": "Bốn thanh tre vuông và hai đai buộc, có khe thật.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          1,
+          0,
+          1,
+          15,
+          3,
+          15
+        ],
+        [
+          2,
+          3,
+          2,
+          6,
+          13,
+          6
+        ],
+        [
+          10,
+          3,
+          2,
+          14,
+          13,
+          6
+        ],
+        [
+          2,
+          3,
+          10,
+          6,
+          13,
+          14
+        ],
+        [
+          10,
+          3,
+          10,
+          14,
+          13,
+          14
+        ],
+        [
+          1,
+          13,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "color": "#c2b16d",
+      "tool": "axe",
+      "hardness": 1.2,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave"
+      ]
+    },
+    {
+      "id": 315,
+      "key": "bronze_socket_post",
+      "name": "Trụ đồng thiếc chân đế",
+      "material": 283,
+      "form": "column_socket",
+      "useNote": "Thân hẹp trong hai đế vuông nổi.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          4,
+          16
+        ],
+        [
+          5,
+          4,
+          5,
+          11,
+          12,
+          11
+        ],
+        [
+          1,
+          12,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "color": "#947850",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze",
+        "c25_hammered_bronze"
+      ]
+    },
+    {
+      "id": 316,
+      "key": "jade_stepped_column",
+      "name": "Cột gốm ngọc ba đai",
+      "material": 263,
+      "form": "column_bands",
+      "useNote": "Ba đai men xanh cách nhau bằng thân nhỏ.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          1,
+          0,
+          1,
+          15,
+          2,
+          15
+        ],
+        [
+          5,
+          2,
+          5,
+          11,
+          6,
+          11
+        ],
+        [
+          2,
+          6,
+          2,
+          14,
+          8,
+          14
+        ],
+        [
+          5,
+          8,
+          5,
+          11,
+          12,
+          11
+        ],
+        [
+          1,
+          12,
+          1,
+          15,
+          14,
+          15
+        ],
+        [
+          4,
+          14,
+          4,
+          12,
+          16,
+          12
+        ]
+      ],
+      "color": "#688b69",
+      "tool": "pick",
+      "hardness": 2.3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile"
+      ]
+    },
+    {
+      "id": 317,
+      "key": "charred_twin_post",
+      "name": "Trụ đôi gỗ hun",
+      "material": 276,
+      "form": "twin_post",
+      "useNote": "Hai trụ song song nối bởi đầu và chân.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          3,
+          16,
+          3,
+          13
+        ],
+        [
+          1,
+          3,
+          5,
+          5,
+          13,
+          11
+        ],
+        [
+          11,
+          3,
+          5,
+          15,
+          13,
+          11
+        ],
+        [
+          0,
+          13,
+          3,
+          16,
+          16,
+          13
+        ]
+      ],
+      "color": "#4c4c44",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_charred_parallel_wood",
+        "c25_charred_parallel_wood",
+        "c25_charred_parallel_wood_cap",
+        "c25_charred_parallel_wood_cap",
+        "c25_charred_parallel_wood",
+        "c25_charred_parallel_wood"
+      ]
+    },
+    {
+      "id": 318,
+      "key": "brass_capped_pedestal",
+      "name": "Cột bục đầu thau",
+      "material": 282,
+      "form": "pedestal",
+      "useNote": "Bục vuông có thân thắt và mặt trưng bày rộng.",
+      "family": "column",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          4,
+          3,
+          4,
+          12,
+          12,
+          12
+        ],
+        [
+          1,
+          12,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "color": "#b7a056",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque"
+      ]
+    },
+    {
+      "id": 319,
+      "key": "oak_two_rail",
+      "name": "Lan can sồi hai thanh",
+      "material": 269,
+      "form": "rail",
+      "useNote": "Hai cột và hai thanh ngang dọc X, không tự nối.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          3,
+          16,
+          10
+        ],
+        [
+          13,
+          0,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          3,
+          5,
+          7,
+          13,
+          7,
+          9
+        ],
+        [
+          3,
+          12,
+          7,
+          13,
+          14,
+          9
+        ]
+      ],
+      "color": "#a58150",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel"
+      ]
+    },
+    {
+      "id": 320,
+      "key": "bamboo_three_rail",
+      "name": "Lan can tre ba thanh",
+      "material": 270,
+      "form": "rail_three",
+      "useNote": "Ba thanh ngang cùng hai cột tre, trục X cố định.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          3,
+          16,
+          10
+        ],
+        [
+          13,
+          0,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          3,
+          3,
+          7,
+          13,
+          5,
+          9
+        ],
+        [
+          3,
+          8,
+          7,
+          13,
+          10,
+          9
+        ],
+        [
+          3,
+          13,
+          7,
+          13,
+          15,
+          9
+        ]
+      ],
+      "color": "#c2b16d",
+      "tool": "axe",
+      "hardness": 1.2,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave"
+      ]
+    },
+    {
+      "id": 321,
+      "key": "iron_bar_screen",
+      "name": "Song sắt bốn thanh",
+      "material": 281,
+      "form": "bars",
+      "useNote": "Bốn song đứng trong khung, có khoảng trống thật.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          2,
+          10
+        ],
+        [
+          0,
+          14,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          2,
+          6,
+          2,
+          14,
+          10
+        ],
+        [
+          5,
+          2,
+          6,
+          7,
+          14,
+          10
+        ],
+        [
+          9,
+          2,
+          6,
+          11,
+          14,
+          10
+        ],
+        [
+          14,
+          2,
+          6,
+          16,
+          14,
+          10
+        ]
+      ],
+      "color": "#697c81",
+      "tool": "pick",
+      "hardness": 3.4,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel",
+        "c25_iron_corrugated_panel"
+      ]
+    },
+    {
+      "id": 322,
+      "key": "cedar_window_frame",
+      "name": "Khung cửa sổ gỗ tuyết tùng",
+      "material": 272,
+      "form": "window",
+      "useNote": "Khung chữ nhật rỗng giữa, cố định mặt XY.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          2,
+          10
+        ],
+        [
+          0,
+          14,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          2,
+          6,
+          2,
+          14,
+          10
+        ],
+        [
+          14,
+          2,
+          6,
+          16,
+          14,
+          10
+        ]
+      ],
+      "color": "#a77659",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame"
+      ]
+    },
+    {
+      "id": 323,
+      "key": "birch_cross_window",
+      "name": "Khung cửa chữ thập bạch dương",
+      "material": 273,
+      "form": "window_cross",
+      "useNote": "Khung chia bốn ô bằng hai thanh giữa.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          2,
+          10
+        ],
+        [
+          0,
+          14,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          2,
+          6,
+          2,
+          14,
+          10
+        ],
+        [
+          14,
+          2,
+          6,
+          16,
+          14,
+          10
+        ],
+        [
+          7,
+          2,
+          6,
+          9,
+          14,
+          10
+        ],
+        [
+          2,
+          7,
+          6,
+          7,
+          9,
+          10
+        ],
+        [
+          9,
+          7,
+          6,
+          14,
+          9,
+          10
+        ]
+      ],
+      "color": "#c7b788",
+      "tool": "axe",
+      "hardness": 1.4,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery"
+      ]
+    },
+    {
+      "id": 324,
+      "key": "rattan_horizontal_screen",
+      "name": "Bình phong mây nan ngang",
+      "material": 275,
+      "form": "screen_slats",
+      "useNote": "Năm nan ngang và hai biên đứng, không mở/đóng.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          2,
+          16,
+          10
+        ],
+        [
+          14,
+          0,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          2,
+          0,
+          7,
+          14,
+          2,
+          9
+        ],
+        [
+          2,
+          3,
+          7,
+          14,
+          5,
+          9
+        ],
+        [
+          2,
+          6,
+          7,
+          14,
+          8,
+          9
+        ],
+        [
+          2,
+          9,
+          7,
+          14,
+          11,
+          9
+        ],
+        [
+          2,
+          12,
+          7,
+          14,
+          14,
+          9
+        ]
+      ],
+      "color": "#bba06a",
+      "tool": "axe",
+      "hardness": 1,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave_cap",
+        "c25_rattan_hex_weave_cap",
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave"
+      ]
+    },
+    {
+      "id": 325,
+      "key": "copper_low_balustrade",
+      "name": "Lan can đồng gờ thấp",
+      "material": 279,
+      "form": "balustrade",
+      "useNote": "Bốn trụ ngắn đỡ tay vịn, trục X.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          3,
+          12,
+          10
+        ],
+        [
+          4,
+          0,
+          6,
+          7,
+          12,
+          10
+        ],
+        [
+          9,
+          0,
+          6,
+          12,
+          12,
+          10
+        ],
+        [
+          13,
+          0,
+          6,
+          16,
+          12,
+          10
+        ],
+        [
+          0,
+          12,
+          5,
+          16,
+          15,
+          11
+        ]
+      ],
+      "color": "#b0774e",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam"
+      ]
+    },
+    {
+      "id": 326,
+      "key": "slate_capped_wall",
+      "name": "Tường thấp nắp phiến",
+      "material": 285,
+      "form": "low_wall",
+      "useNote": "Thân tường hẹp và nắp rộng cao một khối.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          2,
+          0,
+          5,
+          14,
+          12,
+          11
+        ],
+        [
+          0,
+          12,
+          3,
+          16,
+          16,
+          13
+        ]
+      ],
+      "color": "#596779",
+      "tool": "pick",
+      "hardness": 2.7,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course"
+      ]
+    },
+    {
+      "id": 327,
+      "key": "sandstone_gate_arch",
+      "name": "Vòm cổng sa thạch bậc",
+      "material": 249,
+      "form": "arch",
+      "useNote": "Hai chân và vòm bậc có khoảng rỗng giữa.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          5,
+          3,
+          11,
+          11
+        ],
+        [
+          13,
+          0,
+          5,
+          16,
+          11,
+          11
+        ],
+        [
+          0,
+          11,
+          5,
+          5,
+          13,
+          11
+        ],
+        [
+          11,
+          11,
+          5,
+          16,
+          13,
+          11
+        ],
+        [
+          0,
+          13,
+          5,
+          16,
+          16,
+          11
+        ]
+      ],
+      "color": "#c7ac78",
+      "tool": "pick",
+      "hardness": 2.5,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone"
+      ]
+    },
+    {
+      "id": 328,
+      "key": "paper_timber_transom",
+      "name": "Ô thoáng khung giấy",
+      "material": 278,
+      "form": "transom",
+      "useNote": "Khung dày với ba ô hở, dùng phía trên cửa.",
+      "family": "screen",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          3,
+          10
+        ],
+        [
+          0,
+          13,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          3,
+          6,
+          2,
+          13,
+          10
+        ],
+        [
+          14,
+          3,
+          6,
+          16,
+          13,
+          10
+        ],
+        [
+          5,
+          3,
+          6,
+          7,
+          13,
+          10
+        ],
+        [
+          9,
+          3,
+          6,
+          11,
+          13,
+          10
+        ]
+      ],
+      "color": "#ddd2af",
+      "tool": "axe",
+      "hardness": 1,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_paper_timber_lattice",
+        "c25_paper_timber_lattice",
+        "c25_paper_timber_lattice_cap",
+        "c25_paper_timber_lattice_cap",
+        "c25_paper_timber_lattice",
+        "c25_paper_timber_lattice"
+      ]
+    },
+    {
+      "id": 329,
+      "key": "oak_four_leg_table",
+      "name": "Bàn sồi bốn chân trang trí",
+      "material": 269,
+      "form": "table",
+      "useNote": "Mặt bàn cao, bốn chân; không phải bàn chế tạo.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          12,
+          0,
+          16,
+          15,
+          16
+        ],
+        [
+          1,
+          0,
+          1,
+          4,
+          12,
+          4
+        ],
+        [
+          12,
+          0,
+          1,
+          15,
+          12,
+          4
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          12,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          12,
+          15
+        ]
+      ],
+      "color": "#a58150",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel_cap",
+        "c25_pegged_oak_panel",
+        "c25_pegged_oak_panel"
+      ]
+    },
+    {
+      "id": 330,
+      "key": "marble_console_table",
+      "name": "Bàn đá hai trụ trang trí",
+      "material": 256,
+      "form": "console",
+      "useNote": "Mặt cẩm thạch trên hai trụ bên, không chứa đồ.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          12,
+          1,
+          16,
+          16,
+          15
+        ],
+        [
+          1,
+          0,
+          3,
+          4,
+          12,
+          13
+        ],
+        [
+          12,
+          0,
+          3,
+          15,
+          12,
+          13
+        ]
+      ],
+      "color": "#dddcd0",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble"
+      ]
+    },
+    {
+      "id": 331,
+      "key": "walnut_bench",
+      "name": "Ghế băng óc chó trang trí",
+      "material": 271,
+      "form": "bench",
+      "useNote": "Mặt ghế và hai chân tấm; không có thao tác ngồi.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          7,
+          2,
+          16,
+          10,
+          14
+        ],
+        [
+          1,
+          0,
+          3,
+          4,
+          7,
+          13
+        ],
+        [
+          12,
+          0,
+          3,
+          15,
+          7,
+          13
+        ]
+      ],
+      "color": "#775840",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_walnut_herringbone",
+        "c25_walnut_herringbone",
+        "c25_walnut_herringbone_cap",
+        "c25_walnut_herringbone_cap",
+        "c25_walnut_herringbone",
+        "c25_walnut_herringbone"
+      ]
+    },
+    {
+      "id": 332,
+      "key": "birch_back_chair",
+      "name": "Ghế tựa bạch dương trang trí",
+      "material": 273,
+      "form": "chair",
+      "useNote": "Bốn chân, mặt ghế và lưng ở −Z; không ngồi được.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          1,
+          7,
+          2,
+          15,
+          10,
+          15
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          7,
+          5
+        ],
+        [
+          12,
+          0,
+          2,
+          15,
+          7,
+          5
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          7,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          7,
+          15
+        ],
+        [
+          1,
+          10,
+          2,
+          4,
+          16,
+          5
+        ],
+        [
+          12,
+          10,
+          2,
+          15,
+          16,
+          5
+        ],
+        [
+          4,
+          12,
+          2,
+          12,
+          16,
+          5
+        ]
+      ],
+      "color": "#c7b788",
+      "tool": "axe",
+      "hardness": 1.4,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery_cap",
+        "c25_birch_square_joinery",
+        "c25_birch_square_joinery"
+      ]
+    },
+    {
+      "id": 333,
+      "key": "bamboo_low_stool",
+      "name": "Đôn tre thấp trang trí",
+      "material": 270,
+      "form": "stool",
+      "useNote": "Mặt đôn thấp trên bốn chân có khoảng trống.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          1,
+          6,
+          1,
+          15,
+          9,
+          15
+        ],
+        [
+          2,
+          0,
+          2,
+          5,
+          6,
+          5
+        ],
+        [
+          11,
+          0,
+          2,
+          14,
+          6,
+          5
+        ],
+        [
+          2,
+          0,
+          11,
+          5,
+          6,
+          14
+        ],
+        [
+          11,
+          0,
+          11,
+          14,
+          6,
+          14
+        ]
+      ],
+      "color": "#c2b16d",
+      "tool": "axe",
+      "hardness": 1.2,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave_cap",
+        "c25_bamboo_zigzag_weave",
+        "c25_bamboo_zigzag_weave"
+      ]
+    },
+    {
+      "id": 334,
+      "key": "cedar_open_shelf",
+      "name": "Kệ tuyết tùng ba tầng",
+      "material": 272,
+      "form": "shelf",
+      "useNote": "Ba mặt kệ và hai thành; chỉ để xây trang trí.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          2,
+          2,
+          16,
+          14
+        ],
+        [
+          14,
+          0,
+          2,
+          16,
+          16,
+          14
+        ],
+        [
+          2,
+          0,
+          2,
+          14,
+          2,
+          14
+        ],
+        [
+          2,
+          7,
+          2,
+          14,
+          9,
+          14
+        ],
+        [
+          2,
+          14,
+          2,
+          14,
+          16,
+          14
+        ]
+      ],
+      "color": "#a77659",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame"
+      ]
+    },
+    {
+      "id": 335,
+      "key": "copper_work_trestle",
+      "name": "Giá kê đồng hai chân",
+      "material": 279,
+      "form": "trestle",
+      "useNote": "Hai chân tấm và thanh mặt hẹp cho xưởng.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          12,
+          5,
+          16,
+          15,
+          11
+        ],
+        [
+          1,
+          0,
+          3,
+          4,
+          12,
+          13
+        ],
+        [
+          12,
+          0,
+          3,
+          15,
+          12,
+          13
+        ]
+      ],
+      "color": "#b0774e",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam"
+      ]
+    },
+    {
+      "id": 336,
+      "key": "rattan_cushion_seat",
+      "name": "Ghế mây mặt dày trang trí",
+      "material": 275,
+      "form": "seat",
+      "useNote": "Mặt đan dày với chân thấp, không có nội dung chứa.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          5,
+          0,
+          16,
+          10,
+          16
+        ],
+        [
+          1,
+          0,
+          1,
+          4,
+          5,
+          4
+        ],
+        [
+          12,
+          0,
+          1,
+          15,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          5,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          5,
+          15
+        ]
+      ],
+      "color": "#bba06a",
+      "tool": "axe",
+      "hardness": 1,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave_cap",
+        "c25_rattan_hex_weave_cap",
+        "c25_rattan_hex_weave",
+        "c25_rattan_hex_weave"
+      ]
+    },
+    {
+      "id": 337,
+      "key": "shipwood_market_counter",
+      "name": "Quầy ván thuyền trang trí",
+      "material": 277,
+      "form": "counter",
+      "useNote": "Mặt quầy rộng, vách trước và chân sau.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          16
+        ],
+        [
+          0,
+          0,
+          2,
+          16,
+          13,
+          5
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          13,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          13,
+          15
+        ]
+      ],
+      "color": "#849185",
+      "tool": "axe",
+      "hardness": 1.5,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_shipwood_nailboard",
+        "c25_shipwood_nailboard",
+        "c25_shipwood_nailboard_cap",
+        "c25_shipwood_nailboard_cap",
+        "c25_shipwood_nailboard",
+        "c25_shipwood_nailboard"
+      ]
+    },
+    {
+      "id": 338,
+      "key": "brass_display_stand",
+      "name": "Giá trưng bày viền thau",
+      "material": 282,
+      "form": "display",
+      "useNote": "Bục ba tầng cho vật trang trí do người chơi đặt.",
+      "family": "furniture",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          4,
+          3,
+          4,
+          12,
+          11,
+          12
+        ],
+        [
+          1,
+          11,
+          1,
+          15,
+          14,
+          15
+        ]
+      ],
+      "color": "#b7a056",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque"
+      ]
+    },
+    {
+      "id": 339,
+      "key": "terracotta_square_planter",
+      "name": "Bồn gốm vuông rỗng",
+      "material": 261,
+      "form": "planter",
+      "useNote": "Bốn thành và đáy có lòng rỗng; không tự trồng cây.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          12,
+          16
+        ],
+        [
+          13,
+          3,
+          0,
+          16,
+          12,
+          16
+        ],
+        [
+          3,
+          3,
+          0,
+          13,
+          12,
+          3
+        ],
+        [
+          3,
+          3,
+          13,
+          13,
+          12,
+          16
+        ]
+      ],
+      "color": "#b7754a",
+      "tool": "pick",
+      "hardness": 2.2,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk",
+        "c25_terracotta_sun_disk"
+      ]
+    },
+    {
+      "id": 340,
+      "key": "jade_long_trough",
+      "name": "Máng gốm ngọc rỗng",
+      "material": 263,
+      "form": "trough",
+      "useNote": "Máng thấp dọc X, chỉ là hình khối trang trí.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          3,
+          16,
+          2,
+          13
+        ],
+        [
+          0,
+          2,
+          3,
+          2,
+          7,
+          13
+        ],
+        [
+          14,
+          2,
+          3,
+          16,
+          7,
+          13
+        ],
+        [
+          2,
+          2,
+          3,
+          14,
+          7,
+          5
+        ],
+        [
+          2,
+          2,
+          11,
+          14,
+          7,
+          13
+        ]
+      ],
+      "color": "#688b69",
+      "tool": "pick",
+      "hardness": 2.3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile",
+        "c25_jade_bamboo_tile"
+      ]
+    },
+    {
+      "id": 341,
+      "key": "sandstone_corbel",
+      "name": "Con sơn sa thạch bậc",
+      "material": 249,
+      "form": "corbel",
+      "useNote": "Giá đỡ thu bậc bám phía −Z, đặt dưới mái.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          0,
+          16,
+          8,
+          8
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          12,
+          12
+        ],
+        [
+          0,
+          12,
+          0,
+          16,
+          16,
+          16
+        ]
+      ],
+      "color": "#c7ac78",
+      "tool": "pick",
+      "hardness": 2.5,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone",
+        "c25_rusticated_sandstone"
+      ]
+    },
+    {
+      "id": 342,
+      "key": "slate_chimney_ring",
+      "name": "Vành ống khói phiến",
+      "material": 285,
+      "form": "chimney",
+      "useNote": "Bốn vách dày và lỗ giữa thật; không sinh khói.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          3,
+          16,
+          16
+        ],
+        [
+          13,
+          0,
+          0,
+          16,
+          16,
+          16
+        ],
+        [
+          3,
+          0,
+          0,
+          13,
+          16,
+          3
+        ],
+        [
+          3,
+          0,
+          13,
+          13,
+          16,
+          16
+        ]
+      ],
+      "color": "#596779",
+      "tool": "pick",
+      "hardness": 2.7,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course",
+        "c25_slate_ridge_course"
+      ]
+    },
+    {
+      "id": 343,
+      "key": "brass_finial",
+      "name": "Chóp thau phân tầng",
+      "material": 282,
+      "form": "finial",
+      "useNote": "Bốn tầng vuông thu nhỏ làm đỉnh cổng.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          3,
+          3,
+          3,
+          13,
+          7,
+          13
+        ],
+        [
+          5,
+          7,
+          5,
+          11,
+          12,
+          11
+        ],
+        [
+          7,
+          12,
+          7,
+          9,
+          16,
+          9
+        ]
+      ],
+      "color": "#b7a056",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque",
+        "c25_brass_rivet_plaque"
+      ]
+    },
+    {
+      "id": 344,
+      "key": "marble_plinth",
+      "name": "Bệ cẩm thạch ba tầng",
+      "material": 256,
+      "form": "plinth",
+      "useNote": "Bệ thấp rộng, thân thu và mặt trên vuông.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          3,
+          3,
+          3,
+          13,
+          7,
+          13
+        ],
+        [
+          1,
+          7,
+          1,
+          15,
+          10,
+          15
+        ]
+      ],
+      "color": "#dddcd0",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble",
+        "c25_branch_white_marble"
+      ]
+    },
+    {
+      "id": 345,
+      "key": "copper_vent_grille",
+      "name": "Cửa gió đồng nan thẳng",
+      "material": 279,
+      "form": "vent",
+      "useNote": "Khung thấp và năm nan dọc có khe thật.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          2
+        ],
+        [
+          0,
+          0,
+          14,
+          16,
+          3,
+          16
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          3,
+          14
+        ],
+        [
+          14,
+          0,
+          2,
+          16,
+          3,
+          14
+        ],
+        [
+          3,
+          0,
+          2,
+          4,
+          3,
+          14
+        ],
+        [
+          5,
+          0,
+          2,
+          6,
+          3,
+          14
+        ],
+        [
+          7,
+          0,
+          2,
+          8,
+          3,
+          14
+        ],
+        [
+          9,
+          0,
+          2,
+          10,
+          3,
+          14
+        ],
+        [
+          11,
+          0,
+          2,
+          12,
+          3,
+          14
+        ]
+      ],
+      "color": "#b0774e",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam",
+        "c25_copper_standing_seam"
+      ]
+    },
+    {
+      "id": 346,
+      "key": "straw_awning",
+      "name": "Mái hiên rơm giật cấp",
+      "material": 286,
+      "form": "awning",
+      "useNote": "Ba bản mái giật cao về −Z, không có vải động.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          5
+        ],
+        [
+          0,
+          10,
+          5,
+          16,
+          13,
+          10
+        ],
+        [
+          0,
+          7,
+          10,
+          16,
+          10,
+          16
+        ]
+      ],
+      "color": "#bca05a",
+      "tool": "axe",
+      "hardness": 1,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch",
+        "c25_bound_straw_thatch"
+      ]
+    },
+    {
+      "id": 347,
+      "key": "granite_stepping_cluster",
+      "name": "Cụm đá bước ba viên",
+      "material": 250,
+      "form": "stepping",
+      "useNote": "Ba viên vuông thấp tách nhau, khe va chạm khớp hình.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          5,
+          3,
+          7
+        ],
+        [
+          7,
+          0,
+          0,
+          13,
+          4,
+          6
+        ],
+        [
+          5,
+          0,
+          9,
+          12,
+          2,
+          16
+        ]
+      ],
+      "color": "#8a9696",
+      "tool": "pick",
+      "hardness": 3,
+      "minPickTier": 1,
+      "faceKeys": [
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving",
+        "c25_granite_fan_paving"
+      ]
+    },
+    {
+      "id": 348,
+      "key": "cedar_crate_frame",
+      "name": "Khung kiện gỗ thoáng",
+      "material": 272,
+      "form": "crate_frame",
+      "useNote": "Khung cạnh hở có đáy, không phải rương chứa đồ.",
+      "family": "detail",
+      "shape": "boxes",
+      "solid": true,
+      "opaque": false,
+      "render": "opaque",
+      "fixedAxis": "fixed",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          2,
+          16
+        ],
+        [
+          0,
+          2,
+          0,
+          2,
+          14,
+          2
+        ],
+        [
+          14,
+          2,
+          0,
+          16,
+          14,
+          2
+        ],
+        [
+          0,
+          2,
+          14,
+          2,
+          14,
+          16
+        ],
+        [
+          14,
+          2,
+          14,
+          16,
+          14,
+          16
+        ],
+        [
+          0,
+          14,
+          0,
+          16,
+          16,
+          2
+        ],
+        [
+          0,
+          14,
+          14,
+          16,
+          16,
+          16
+        ],
+        [
+          0,
+          14,
+          2,
+          2,
+          16,
+          14
+        ],
+        [
+          14,
+          14,
+          2,
+          16,
+          16,
+          14
+        ]
+      ],
+      "color": "#a77659",
+      "tool": "axe",
+      "hardness": 1.6,
+      "minPickTier": 0,
+      "faceKeys": [
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame_cap",
+        "c25_cedar_diagonal_frame",
+        "c25_cedar_diagonal_frame"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": 249,
+      "name": "Sa thạch chạm viền",
+      "shape": "cube",
+      "tiles": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "position": [
+        -46,
+        80,
+        28
+      ],
+      "useNote": "Khối nền sáng với mạch ngang lệch và viền đá đục sâu.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 250,
+      "name": "Đá hoa cương lát quạt",
+      "shape": "cube",
+      "tiles": [
+        171,
+        171,
+        171,
+        171,
+        171,
+        171
+      ],
+      "position": [
+        -43,
+        80,
+        28
+      ],
+      "useNote": "Các cung đá xếp nan quạt làm sân và lối rẽ.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 251,
+      "name": "Đá vôi hàng dài",
+      "shape": "cube",
+      "tiles": [
+        172,
+        172,
+        172,
+        172,
+        172,
+        172
+      ],
+      "position": [
+        -40,
+        80,
+        28
+      ],
+      "useNote": "Hàng đá dài xen viên ngắn, mạch vữa hẹp cho tường.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 252,
+      "name": "Bazan khảm bát giác",
+      "shape": "cube",
+      "tiles": [
+        173,
+        173,
+        173,
+        173,
+        173,
+        173
+      ],
+      "position": [
+        -37,
+        80,
+        28
+      ],
+      "useNote": "Bát giác bazan viền ngà và chốt đồng ở giao điểm.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 253,
+      "name": "Đá travertine sọc rỗ",
+      "shape": "cube",
+      "tiles": [
+        174,
+        174,
+        174,
+        174,
+        174,
+        174
+      ],
+      "position": [
+        -34,
+        80,
+        28
+      ],
+      "useNote": "Dải khoáng ngang và hốc nhỏ thành lớp cho bậc và cột.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 254,
+      "name": "Đá phiến ghép chữ V",
+      "shape": "cube",
+      "tiles": [
+        175,
+        175,
+        175,
+        175,
+        175,
+        175
+      ],
+      "position": [
+        -46,
+        80,
+        32
+      ],
+      "useNote": "Hai dải phiến xiên gặp nhau thành chữ V rõ.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 255,
+      "name": "Mảng cuội suối ghép",
+      "shape": "cube",
+      "tiles": [
+        176,
+        176,
+        176,
+        176,
+        176,
+        176
+      ],
+      "position": [
+        -43,
+        80,
+        32
+      ],
+      "useNote": "Cuội tròn nhiều cỡ nằm trong nền vữa tối.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 256,
+      "name": "Cẩm thạch trắng vân nhánh",
+      "shape": "cube",
+      "tiles": [
+        177,
+        177,
+        177,
+        177,
+        177,
+        177
+      ],
+      "position": [
+        -40,
+        80,
+        32
+      ],
+      "useNote": "Mặt trắng yên với một vân xám chia nhánh, dùng cho sảnh.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 257,
+      "name": "Cẩm thạch xanh vân gãy",
+      "shape": "cube",
+      "tiles": [
+        178,
+        178,
+        178,
+        178,
+        178,
+        178
+      ],
+      "position": [
+        -37,
+        80,
+        32
+      ],
+      "useNote": "Mạch kem góc cạnh cắt qua nền xanh đậm.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 258,
+      "name": "Đá hồng phân tầng",
+      "shape": "cube",
+      "tiles": [
+        179,
+        179,
+        179,
+        179,
+        179,
+        179
+      ],
+      "position": [
+        -34,
+        80,
+        32
+      ],
+      "useNote": "Dải đá hồng lệch nhịp với lớp vàng nhạt mỏng.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 259,
+      "name": "Đá vôi chạm hóa thạch",
+      "shape": "cube",
+      "tiles": [
+        180,
+        180,
+        180,
+        180,
+        180,
+        180
+      ],
+      "position": [
+        -26,
+        80,
+        28
+      ],
+      "useNote": "Vỏ xoắn và gân lá khắc riêng trên đá, không phải quặng.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 260,
+      "name": "Gốm lam sóng nước",
+      "shape": "cube",
+      "tiles": [
+        181,
+        181,
+        181,
+        181,
+        181,
+        181
+      ],
+      "position": [
+        -23,
+        80,
+        28
+      ],
+      "useNote": "Ba hàng sóng men lam viền ngà cho hồ và mái hiên.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 261,
+      "name": "Gốm đất mặt trời",
+      "shape": "cube",
+      "tiles": [
+        182,
+        182,
+        182,
+        182,
+        182,
+        182
+      ],
+      "position": [
+        -20,
+        80,
+        28
+      ],
+      "useNote": "Đĩa mặt trời giữa ô, tia rộng và vòng chấm bao ngoài.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 262,
+      "name": "Gốm ngà phù điêu quạt",
+      "shape": "cube",
+      "tiles": [
+        183,
+        183,
+        183,
+        183,
+        183,
+        183
+      ],
+      "position": [
+        -17,
+        80,
+        28
+      ],
+      "useNote": "Nan quạt bán tròn nổi bằng ba sắc men ngà.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 263,
+      "name": "Gốm ngọc đốt trúc",
+      "shape": "cube",
+      "tiles": [
+        184,
+        184,
+        184,
+        184,
+        184,
+        184
+      ],
+      "position": [
+        -14,
+        80,
+        28
+      ],
+      "useNote": "Ba thân trúc có đốt và lá chéo, họa tiết tĩnh.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 264,
+      "name": "Khảm chàm sao tám cánh",
+      "shape": "cube",
+      "tiles": [
+        185,
+        185,
+        185,
+        185,
+        185,
+        185
+      ],
+      "position": [
+        -26,
+        80,
+        32
+      ],
+      "useNote": "Sao tám cánh men ngà trên nền chàm với góc đất nung.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 265,
+      "name": "Gạch vàng đan rổ",
+      "shape": "cube",
+      "tiles": [
+        186,
+        186,
+        186,
+        186,
+        186,
+        186
+      ],
+      "position": [
+        -23,
+        80,
+        32
+      ],
+      "useNote": "Cặp gạch dài xoay vuông góc như mối đan cho đường đi.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 266,
+      "name": "Gốm mận ô bát giác",
+      "shape": "cube",
+      "tiles": [
+        187,
+        187,
+        187,
+        187,
+        187,
+        187
+      ],
+      "position": [
+        -20,
+        80,
+        32
+      ],
+      "useNote": "Ô bát giác men mận và hình thoi ngà phân cách.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 267,
+      "name": "Gạch hoa cánh phấn",
+      "shape": "cube",
+      "tiles": [
+        188,
+        188,
+        188,
+        188,
+        188,
+        188
+      ],
+      "position": [
+        -17,
+        80,
+        32
+      ],
+      "useNote": "Hoa bốn cánh xanh xám, tâm đất đỏ trên nền ngà.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 268,
+      "name": "Gạch sẫm hàng đứng",
+      "shape": "cube",
+      "tiles": [
+        189,
+        189,
+        189,
+        189,
+        189,
+        189
+      ],
+      "position": [
+        -14,
+        80,
+        32
+      ],
+      "useNote": "Gạch đứng có đầu sáng, ghép viền tường và cửa.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 269,
+      "name": "Gỗ sồi ghép chốt",
+      "shape": "cube",
+      "tiles": [
+        190,
+        190,
+        191,
+        191,
+        190,
+        190
+      ],
+      "position": [
+        -6,
+        80,
+        28
+      ],
+      "useNote": "Ván rộng có chốt vuông và đường mộng rõ.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 270,
+      "name": "Tre đan zích zắc",
+      "shape": "cube",
+      "tiles": [
+        192,
+        192,
+        193,
+        193,
+        192,
+        192
+      ],
+      "position": [
+        -3,
+        80,
+        28
+      ],
+      "useNote": "Nan tre sáng tối đan zích zắc, có mép buộc.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 271,
+      "name": "Gỗ óc chó xương cá",
+      "shape": "cube",
+      "tiles": [
+        194,
+        194,
+        195,
+        195,
+        194,
+        194
+      ],
+      "position": [
+        0,
+        80,
+        28
+      ],
+      "useNote": "Thanh nâu sẫm ghép xương cá, thớ chạy theo thanh.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 272,
+      "name": "Gỗ tuyết tùng giằng chéo",
+      "shape": "cube",
+      "tiles": [
+        196,
+        196,
+        197,
+        197,
+        196,
+        196
+      ],
+      "position": [
+        3,
+        80,
+        28
+      ],
+      "useNote": "Khung viền và giằng chữ X tách khỏi nền ván.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 273,
+      "name": "Gỗ bạch dương mộng vuông",
+      "shape": "cube",
+      "tiles": [
+        198,
+        198,
+        199,
+        199,
+        198,
+        198
+      ],
+      "position": [
+        6,
+        80,
+        28
+      ],
+      "useNote": "Các khung vuông lồng nhau với chốt nhỏ ở góc.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 274,
+      "name": "Vảy gỗ dẻ lợp mái",
+      "shape": "cube",
+      "tiles": [
+        200,
+        200,
+        201,
+        201,
+        200,
+        200
+      ],
+      "position": [
+        -6,
+        80,
+        32
+      ],
+      "useNote": "Hai hàng vảy tròn chồng mí có đinh trên đỉnh.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 275,
+      "name": "Mây đan mắt lục giác",
+      "shape": "cube",
+      "tiles": [
+        202,
+        202,
+        203,
+        203,
+        202,
+        202
+      ],
+      "position": [
+        -3,
+        80,
+        32
+      ],
+      "useNote": "Nan mây tạo mắt lục giác màu tối trên khối kín.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 276,
+      "name": "Gỗ hun rãnh dọc",
+      "shape": "cube",
+      "tiles": [
+        204,
+        204,
+        205,
+        205,
+        204,
+        204
+      ],
+      "position": [
+        0,
+        80,
+        32
+      ],
+      "useNote": "Rãnh dọc đen than và các vết nứt ngắn, bề mặt tĩnh.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 277,
+      "name": "Ván thuyền ghép đinh",
+      "shape": "cube",
+      "tiles": [
+        206,
+        206,
+        207,
+        207,
+        206,
+        206
+      ],
+      "position": [
+        3,
+        80,
+        32
+      ],
+      "useNote": "Ván bạc màu theo hàng, đầu đinh sẫm và thớ dài.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 278,
+      "name": "Vách giấy ô gỗ",
+      "shape": "cube",
+      "tiles": [
+        208,
+        208,
+        209,
+        209,
+        208,
+        208
+      ],
+      "position": [
+        6,
+        80,
+        32
+      ],
+      "useNote": "Ô giấy kem trong lưới gỗ, khối đầy không mở được.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 279,
+      "name": "Đồng mái gờ đứng",
+      "shape": "cube",
+      "tiles": [
+        210,
+        210,
+        210,
+        210,
+        210,
+        210
+      ],
+      "position": [
+        14,
+        80,
+        28
+      ],
+      "useNote": "Hai gờ đứng, mép tôn gập và đường đồng sáng.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 280,
+      "name": "Kẽm mái hình thoi",
+      "shape": "cube",
+      "tiles": [
+        211,
+        211,
+        211,
+        211,
+        211,
+        211
+      ],
+      "position": [
+        17,
+        80,
+        28
+      ],
+      "useNote": "Tấm kẽm ghép thoi có gờ sáng ở hai cạnh.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 281,
+      "name": "Sắt tấm sóng vuông",
+      "shape": "cube",
+      "tiles": [
+        212,
+        212,
+        212,
+        212,
+        212,
+        212
+      ],
+      "position": [
+        20,
+        80,
+        28
+      ],
+      "useNote": "Sóng vuông rộng xen dải tối, dùng cho mái xưởng.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 282,
+      "name": "Đồng thau viền đinh",
+      "shape": "cube",
+      "tiles": [
+        213,
+        213,
+        213,
+        213,
+        213,
+        213
+      ],
+      "position": [
+        23,
+        80,
+        28
+      ],
+      "useNote": "Tấm thau có viền kép và bốn đinh lớn.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 283,
+      "name": "Đồng thiếc gõ búa",
+      "shape": "cube",
+      "tiles": [
+        214,
+        214,
+        214,
+        214,
+        214,
+        214
+      ],
+      "position": [
+        26,
+        80,
+        28
+      ],
+      "useNote": "Các vết búa tròn lệch hàng với phản sáng tiết chế.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 284,
+      "name": "Đồng xanh ô lõm",
+      "shape": "cube",
+      "tiles": [
+        215,
+        215,
+        215,
+        215,
+        215,
+        215
+      ],
+      "position": [
+        14,
+        80,
+        32
+      ],
+      "useNote": "Ô vuông chìm và bốn góc đồng nâu, không có lỗ xuyên.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 285,
+      "name": "Ngói phiến hàng gờ",
+      "shape": "cube",
+      "tiles": [
+        216,
+        216,
+        216,
+        216,
+        216,
+        216
+      ],
+      "position": [
+        17,
+        80,
+        32
+      ],
+      "useNote": "Mí ngói bản rộng, gờ nối dọc xen kẽ.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 286,
+      "name": "Mái rơm buộc lạt",
+      "shape": "cube",
+      "tiles": [
+        217,
+        217,
+        217,
+        217,
+        217,
+        217
+      ],
+      "position": [
+        20,
+        80,
+        32
+      ],
+      "useNote": "Rơm chạy dọc thành bó, hai hàng lạt ngang rõ.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 287,
+      "name": "Ngói đất chồng mí",
+      "shape": "cube",
+      "tiles": [
+        218,
+        218,
+        218,
+        218,
+        218,
+        218
+      ],
+      "position": [
+        23,
+        80,
+        32
+      ],
+      "useNote": "Ngói đất bản cong biểu diễn bằng mí và đường gờ.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 288,
+      "name": "Ngói men lam mũi tên",
+      "shape": "cube",
+      "tiles": [
+        219,
+        219,
+        219,
+        219,
+        219,
+        219
+      ],
+      "position": [
+        26,
+        80,
+        32
+      ],
+      "useNote": "Các mũi ngói men lam chồng thành hàng so le.",
+      "fixedAxis": "XYZ"
+    },
+    {
+      "id": 289,
+      "name": "Nửa tấm sa thạch viền",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "position": [
+        34,
+        80,
+        28
+      ],
+      "useNote": "Lát bậc thấp và bờ sân cao nửa khối.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 290,
+      "name": "Nửa tấm đá lát quạt",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        171,
+        171,
+        171,
+        171,
+        171,
+        171
+      ],
+      "position": [
+        37,
+        80,
+        28
+      ],
+      "useNote": "Ghép lối đi thấp, giữ họa tiết nan quạt.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 291,
+      "name": "Nửa tấm travertine",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        174,
+        174,
+        174,
+        174,
+        174,
+        174
+      ],
+      "position": [
+        40,
+        80,
+        28
+      ],
+      "useNote": "Bậc thấp với lớp khoáng ngang lộ ở cạnh.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 292,
+      "name": "Nửa tấm cẩm thạch trắng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        177,
+        177,
+        177,
+        177,
+        177,
+        177
+      ],
+      "position": [
+        43,
+        80,
+        28
+      ],
+      "useNote": "Mặt bàn hoặc sàn thấp có vân nhánh.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 293,
+      "name": "Nửa tấm gốm sóng lam",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        181,
+        181,
+        181,
+        181,
+        181,
+        181
+      ],
+      "position": [
+        46,
+        80,
+        28
+      ],
+      "useNote": "Viền hồ và mái hiên thấp bằng gốm.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 294,
+      "name": "Nửa tấm gạch đan rổ",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        186,
+        186,
+        186,
+        186,
+        186,
+        186
+      ],
+      "position": [
+        34,
+        80,
+        32
+      ],
+      "useNote": "Đường đi nửa khối với mối đan rõ.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 295,
+      "name": "Nửa tấm sồi ghép chốt",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        190,
+        190,
+        191,
+        191,
+        190,
+        190
+      ],
+      "position": [
+        37,
+        80,
+        32
+      ],
+      "useNote": "Sàn gỗ thấp hoặc mái hiên mỏng.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 296,
+      "name": "Nửa tấm bạch dương mộng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        198,
+        198,
+        199,
+        199,
+        198,
+        198
+      ],
+      "position": [
+        40,
+        80,
+        32
+      ],
+      "useNote": "Sàn sáng giữ các khung mộng vuông.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 297,
+      "name": "Nửa tấm đồng gờ",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        210,
+        210,
+        210,
+        210,
+        210,
+        210
+      ],
+      "position": [
+        43,
+        80,
+        32
+      ],
+      "useNote": "Bậc xưởng và mép mái đồng nửa khối.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 298,
+      "name": "Nửa tấm mái rơm",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ]
+      ],
+      "tiles": [
+        217,
+        217,
+        217,
+        217,
+        217,
+        217
+      ],
+      "position": [
+        46,
+        80,
+        32
+      ],
+      "useNote": "Mái rơm mỏng cho nhà vườn.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 299,
+      "name": "Bậc sa thạch chạm viền",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "position": [
+        -46,
+        80,
+        48
+      ],
+      "useNote": "Bậc thấp ở +Z, cao ở −Z; hướng đặt cố định.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 300,
+      "name": "Bậc đá hoa cương lát quạt",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        171,
+        171,
+        171,
+        171,
+        171,
+        171
+      ],
+      "position": [
+        -43,
+        80,
+        48
+      ],
+      "useNote": "Bậc sân quạt, phía cao cố định −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 301,
+      "name": "Bậc travertine sọc",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        174,
+        174,
+        174,
+        174,
+        174,
+        174
+      ],
+      "position": [
+        -40,
+        80,
+        48
+      ],
+      "useNote": "Mặt bậc đá kem phân tầng, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 302,
+      "name": "Bậc cẩm thạch vân nhánh",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        177,
+        177,
+        177,
+        177,
+        177,
+        177
+      ],
+      "position": [
+        -37,
+        80,
+        48
+      ],
+      "useNote": "Cầu thang sảnh trắng, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 303,
+      "name": "Bậc gốm sóng lam",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        181,
+        181,
+        181,
+        181,
+        181,
+        181
+      ],
+      "position": [
+        -34,
+        80,
+        48
+      ],
+      "useNote": "Bậc gốm xanh hoặc mái bậc, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 304,
+      "name": "Bậc gạch vàng đan rổ",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        186,
+        186,
+        186,
+        186,
+        186,
+        186
+      ],
+      "position": [
+        -46,
+        80,
+        52
+      ],
+      "useNote": "Bậc ngoài sân vàng ấm, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 305,
+      "name": "Bậc sồi ghép chốt",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        190,
+        190,
+        191,
+        191,
+        190,
+        190
+      ],
+      "position": [
+        -43,
+        80,
+        52
+      ],
+      "useNote": "Bậc hiên gỗ, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 306,
+      "name": "Bậc bạch dương mộng vuông",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        198,
+        198,
+        199,
+        199,
+        198,
+        198
+      ],
+      "position": [
+        -40,
+        80,
+        52
+      ],
+      "useNote": "Bậc gỗ sáng, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 307,
+      "name": "Bậc đồng mái gờ",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        210,
+        210,
+        210,
+        210,
+        210,
+        210
+      ],
+      "position": [
+        -37,
+        80,
+        52
+      ],
+      "useNote": "Bậc xưởng hoặc mái đồng, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 308,
+      "name": "Bậc mái rơm buộc lạt",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          8,
+          16
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          16,
+          8
+        ]
+      ],
+      "tiles": [
+        217,
+        217,
+        217,
+        217,
+        217,
+        217
+      ],
+      "position": [
+        -34,
+        80,
+        52
+      ],
+      "useNote": "Ghép mái rơm bậc, cao ở −Z.",
+      "fixedAxis": "high:-Z"
+    },
+    {
+      "id": 309,
+      "name": "Cột đá vôi cạnh vát",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          5,
+          3,
+          3,
+          11,
+          13,
+          13
+        ],
+        [
+          3,
+          3,
+          5,
+          5,
+          13,
+          11
+        ],
+        [
+          11,
+          3,
+          5,
+          13,
+          13,
+          11
+        ],
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          16
+        ]
+      ],
+      "tiles": [
+        172,
+        172,
+        172,
+        172,
+        172,
+        172
+      ],
+      "position": [
+        -26,
+        80,
+        48
+      ],
+      "useNote": "Chân và đầu vuông, thân vát bốn cạnh bằng các hộp.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 310,
+      "name": "Cột bazan đai tầng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          5,
+          3,
+          5,
+          11,
+          7,
+          11
+        ],
+        [
+          2,
+          7,
+          2,
+          14,
+          9,
+          14
+        ],
+        [
+          5,
+          9,
+          5,
+          11,
+          13,
+          11
+        ],
+        [
+          1,
+          13,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "tiles": [
+        173,
+        173,
+        173,
+        173,
+        173,
+        173
+      ],
+      "position": [
+        -23,
+        80,
+        48
+      ],
+      "useNote": "Thân tối, hai đai rộng tạo nhịp cho cổng.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 311,
+      "name": "Cột sa thạch thu tầng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          2,
+          3,
+          2,
+          14,
+          6,
+          14
+        ],
+        [
+          3,
+          6,
+          3,
+          13,
+          10,
+          13
+        ],
+        [
+          4,
+          10,
+          4,
+          12,
+          13,
+          12
+        ],
+        [
+          2,
+          13,
+          2,
+          14,
+          16,
+          14
+        ]
+      ],
+      "tiles": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "position": [
+        -20,
+        80,
+        48
+      ],
+      "useNote": "Ba tầng thân thu nhỏ dần, đỡ mái và hiên.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 312,
+      "name": "Trụ ốp cẩm thạch",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          7
+        ],
+        [
+          3,
+          3,
+          0,
+          13,
+          13,
+          4
+        ],
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          7
+        ]
+      ],
+      "tiles": [
+        177,
+        177,
+        177,
+        177,
+        177,
+        177
+      ],
+      "position": [
+        -17,
+        80,
+        48
+      ],
+      "useNote": "Trụ nông áp cạnh −Z, có chân và đầu nhô.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 313,
+      "name": "Trụ sồi chân mộng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          1,
+          0,
+          1,
+          15,
+          3,
+          15
+        ],
+        [
+          4,
+          3,
+          4,
+          12,
+          13,
+          12
+        ],
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          16
+        ]
+      ],
+      "tiles": [
+        190,
+        190,
+        191,
+        191,
+        190,
+        190
+      ],
+      "position": [
+        -14,
+        80,
+        48
+      ],
+      "useNote": "Cột gỗ có đế và đầu bản rộng.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 314,
+      "name": "Cột tre bó bốn thanh",
+      "shape": "boxes",
+      "boxes": [
+        [
+          1,
+          0,
+          1,
+          15,
+          3,
+          15
+        ],
+        [
+          2,
+          3,
+          2,
+          6,
+          13,
+          6
+        ],
+        [
+          10,
+          3,
+          2,
+          14,
+          13,
+          6
+        ],
+        [
+          2,
+          3,
+          10,
+          6,
+          13,
+          14
+        ],
+        [
+          10,
+          3,
+          10,
+          14,
+          13,
+          14
+        ],
+        [
+          1,
+          13,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "tiles": [
+        192,
+        192,
+        193,
+        193,
+        192,
+        192
+      ],
+      "position": [
+        -26,
+        80,
+        52
+      ],
+      "useNote": "Bốn thanh tre vuông và hai đai buộc, có khe thật.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 315,
+      "name": "Trụ đồng thiếc chân đế",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          4,
+          16
+        ],
+        [
+          5,
+          4,
+          5,
+          11,
+          12,
+          11
+        ],
+        [
+          1,
+          12,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "tiles": [
+        214,
+        214,
+        214,
+        214,
+        214,
+        214
+      ],
+      "position": [
+        -23,
+        80,
+        52
+      ],
+      "useNote": "Thân hẹp trong hai đế vuông nổi.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 316,
+      "name": "Cột gốm ngọc ba đai",
+      "shape": "boxes",
+      "boxes": [
+        [
+          1,
+          0,
+          1,
+          15,
+          2,
+          15
+        ],
+        [
+          5,
+          2,
+          5,
+          11,
+          6,
+          11
+        ],
+        [
+          2,
+          6,
+          2,
+          14,
+          8,
+          14
+        ],
+        [
+          5,
+          8,
+          5,
+          11,
+          12,
+          11
+        ],
+        [
+          1,
+          12,
+          1,
+          15,
+          14,
+          15
+        ],
+        [
+          4,
+          14,
+          4,
+          12,
+          16,
+          12
+        ]
+      ],
+      "tiles": [
+        184,
+        184,
+        184,
+        184,
+        184,
+        184
+      ],
+      "position": [
+        -20,
+        80,
+        52
+      ],
+      "useNote": "Ba đai men xanh cách nhau bằng thân nhỏ.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 317,
+      "name": "Trụ đôi gỗ hun",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          3,
+          16,
+          3,
+          13
+        ],
+        [
+          1,
+          3,
+          5,
+          5,
+          13,
+          11
+        ],
+        [
+          11,
+          3,
+          5,
+          15,
+          13,
+          11
+        ],
+        [
+          0,
+          13,
+          3,
+          16,
+          16,
+          13
+        ]
+      ],
+      "tiles": [
+        204,
+        204,
+        205,
+        205,
+        204,
+        204
+      ],
+      "position": [
+        -17,
+        80,
+        52
+      ],
+      "useNote": "Hai trụ song song nối bởi đầu và chân.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 318,
+      "name": "Cột bục đầu thau",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          4,
+          3,
+          4,
+          12,
+          12,
+          12
+        ],
+        [
+          1,
+          12,
+          1,
+          15,
+          16,
+          15
+        ]
+      ],
+      "tiles": [
+        213,
+        213,
+        213,
+        213,
+        213,
+        213
+      ],
+      "position": [
+        -14,
+        80,
+        52
+      ],
+      "useNote": "Bục vuông có thân thắt và mặt trưng bày rộng.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 319,
+      "name": "Lan can sồi hai thanh",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          3,
+          16,
+          10
+        ],
+        [
+          13,
+          0,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          3,
+          5,
+          7,
+          13,
+          7,
+          9
+        ],
+        [
+          3,
+          12,
+          7,
+          13,
+          14,
+          9
+        ]
+      ],
+      "tiles": [
+        190,
+        190,
+        191,
+        191,
+        190,
+        190
+      ],
+      "position": [
+        -6,
+        80,
+        48
+      ],
+      "useNote": "Hai cột và hai thanh ngang dọc X, không tự nối.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 320,
+      "name": "Lan can tre ba thanh",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          3,
+          16,
+          10
+        ],
+        [
+          13,
+          0,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          3,
+          3,
+          7,
+          13,
+          5,
+          9
+        ],
+        [
+          3,
+          8,
+          7,
+          13,
+          10,
+          9
+        ],
+        [
+          3,
+          13,
+          7,
+          13,
+          15,
+          9
+        ]
+      ],
+      "tiles": [
+        192,
+        192,
+        193,
+        193,
+        192,
+        192
+      ],
+      "position": [
+        -3,
+        80,
+        48
+      ],
+      "useNote": "Ba thanh ngang cùng hai cột tre, trục X cố định.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 321,
+      "name": "Song sắt bốn thanh",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          2,
+          10
+        ],
+        [
+          0,
+          14,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          2,
+          6,
+          2,
+          14,
+          10
+        ],
+        [
+          5,
+          2,
+          6,
+          7,
+          14,
+          10
+        ],
+        [
+          9,
+          2,
+          6,
+          11,
+          14,
+          10
+        ],
+        [
+          14,
+          2,
+          6,
+          16,
+          14,
+          10
+        ]
+      ],
+      "tiles": [
+        212,
+        212,
+        212,
+        212,
+        212,
+        212
+      ],
+      "position": [
+        0,
+        80,
+        48
+      ],
+      "useNote": "Bốn song đứng trong khung, có khoảng trống thật.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 322,
+      "name": "Khung cửa sổ gỗ tuyết tùng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          2,
+          10
+        ],
+        [
+          0,
+          14,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          2,
+          6,
+          2,
+          14,
+          10
+        ],
+        [
+          14,
+          2,
+          6,
+          16,
+          14,
+          10
+        ]
+      ],
+      "tiles": [
+        196,
+        196,
+        197,
+        197,
+        196,
+        196
+      ],
+      "position": [
+        3,
+        80,
+        48
+      ],
+      "useNote": "Khung chữ nhật rỗng giữa, cố định mặt XY.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 323,
+      "name": "Khung cửa chữ thập bạch dương",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          2,
+          10
+        ],
+        [
+          0,
+          14,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          2,
+          6,
+          2,
+          14,
+          10
+        ],
+        [
+          14,
+          2,
+          6,
+          16,
+          14,
+          10
+        ],
+        [
+          7,
+          2,
+          6,
+          9,
+          14,
+          10
+        ],
+        [
+          2,
+          7,
+          6,
+          7,
+          9,
+          10
+        ],
+        [
+          9,
+          7,
+          6,
+          14,
+          9,
+          10
+        ]
+      ],
+      "tiles": [
+        198,
+        198,
+        199,
+        199,
+        198,
+        198
+      ],
+      "position": [
+        6,
+        80,
+        48
+      ],
+      "useNote": "Khung chia bốn ô bằng hai thanh giữa.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 324,
+      "name": "Bình phong mây nan ngang",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          2,
+          16,
+          10
+        ],
+        [
+          14,
+          0,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          2,
+          0,
+          7,
+          14,
+          2,
+          9
+        ],
+        [
+          2,
+          3,
+          7,
+          14,
+          5,
+          9
+        ],
+        [
+          2,
+          6,
+          7,
+          14,
+          8,
+          9
+        ],
+        [
+          2,
+          9,
+          7,
+          14,
+          11,
+          9
+        ],
+        [
+          2,
+          12,
+          7,
+          14,
+          14,
+          9
+        ]
+      ],
+      "tiles": [
+        202,
+        202,
+        203,
+        203,
+        202,
+        202
+      ],
+      "position": [
+        -6,
+        80,
+        52
+      ],
+      "useNote": "Năm nan ngang và hai biên đứng, không mở/đóng.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 325,
+      "name": "Lan can đồng gờ thấp",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          3,
+          12,
+          10
+        ],
+        [
+          4,
+          0,
+          6,
+          7,
+          12,
+          10
+        ],
+        [
+          9,
+          0,
+          6,
+          12,
+          12,
+          10
+        ],
+        [
+          13,
+          0,
+          6,
+          16,
+          12,
+          10
+        ],
+        [
+          0,
+          12,
+          5,
+          16,
+          15,
+          11
+        ]
+      ],
+      "tiles": [
+        210,
+        210,
+        210,
+        210,
+        210,
+        210
+      ],
+      "position": [
+        -3,
+        80,
+        52
+      ],
+      "useNote": "Bốn trụ ngắn đỡ tay vịn, trục X.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 326,
+      "name": "Tường thấp nắp phiến",
+      "shape": "boxes",
+      "boxes": [
+        [
+          2,
+          0,
+          5,
+          14,
+          12,
+          11
+        ],
+        [
+          0,
+          12,
+          3,
+          16,
+          16,
+          13
+        ]
+      ],
+      "tiles": [
+        216,
+        216,
+        216,
+        216,
+        216,
+        216
+      ],
+      "position": [
+        0,
+        80,
+        52
+      ],
+      "useNote": "Thân tường hẹp và nắp rộng cao một khối.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 327,
+      "name": "Vòm cổng sa thạch bậc",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          5,
+          3,
+          11,
+          11
+        ],
+        [
+          13,
+          0,
+          5,
+          16,
+          11,
+          11
+        ],
+        [
+          0,
+          11,
+          5,
+          5,
+          13,
+          11
+        ],
+        [
+          11,
+          11,
+          5,
+          16,
+          13,
+          11
+        ],
+        [
+          0,
+          13,
+          5,
+          16,
+          16,
+          11
+        ]
+      ],
+      "tiles": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "position": [
+        3,
+        80,
+        52
+      ],
+      "useNote": "Hai chân và vòm bậc có khoảng rỗng giữa.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 328,
+      "name": "Ô thoáng khung giấy",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          6,
+          16,
+          3,
+          10
+        ],
+        [
+          0,
+          13,
+          6,
+          16,
+          16,
+          10
+        ],
+        [
+          0,
+          3,
+          6,
+          2,
+          13,
+          10
+        ],
+        [
+          14,
+          3,
+          6,
+          16,
+          13,
+          10
+        ],
+        [
+          5,
+          3,
+          6,
+          7,
+          13,
+          10
+        ],
+        [
+          9,
+          3,
+          6,
+          11,
+          13,
+          10
+        ]
+      ],
+      "tiles": [
+        208,
+        208,
+        209,
+        209,
+        208,
+        208
+      ],
+      "position": [
+        6,
+        80,
+        52
+      ],
+      "useNote": "Khung dày với ba ô hở, dùng phía trên cửa.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 329,
+      "name": "Bàn sồi bốn chân trang trí",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          12,
+          0,
+          16,
+          15,
+          16
+        ],
+        [
+          1,
+          0,
+          1,
+          4,
+          12,
+          4
+        ],
+        [
+          12,
+          0,
+          1,
+          15,
+          12,
+          4
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          12,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          12,
+          15
+        ]
+      ],
+      "tiles": [
+        190,
+        190,
+        191,
+        191,
+        190,
+        190
+      ],
+      "position": [
+        14,
+        80,
+        48
+      ],
+      "useNote": "Mặt bàn cao, bốn chân; không phải bàn chế tạo.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 330,
+      "name": "Bàn đá hai trụ trang trí",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          12,
+          1,
+          16,
+          16,
+          15
+        ],
+        [
+          1,
+          0,
+          3,
+          4,
+          12,
+          13
+        ],
+        [
+          12,
+          0,
+          3,
+          15,
+          12,
+          13
+        ]
+      ],
+      "tiles": [
+        177,
+        177,
+        177,
+        177,
+        177,
+        177
+      ],
+      "position": [
+        17,
+        80,
+        48
+      ],
+      "useNote": "Mặt cẩm thạch trên hai trụ bên, không chứa đồ.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 331,
+      "name": "Ghế băng óc chó trang trí",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          7,
+          2,
+          16,
+          10,
+          14
+        ],
+        [
+          1,
+          0,
+          3,
+          4,
+          7,
+          13
+        ],
+        [
+          12,
+          0,
+          3,
+          15,
+          7,
+          13
+        ]
+      ],
+      "tiles": [
+        194,
+        194,
+        195,
+        195,
+        194,
+        194
+      ],
+      "position": [
+        20,
+        80,
+        48
+      ],
+      "useNote": "Mặt ghế và hai chân tấm; không có thao tác ngồi.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 332,
+      "name": "Ghế tựa bạch dương trang trí",
+      "shape": "boxes",
+      "boxes": [
+        [
+          1,
+          7,
+          2,
+          15,
+          10,
+          15
+        ],
+        [
+          1,
+          0,
+          2,
+          4,
+          7,
+          5
+        ],
+        [
+          12,
+          0,
+          2,
+          15,
+          7,
+          5
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          7,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          7,
+          15
+        ],
+        [
+          1,
+          10,
+          2,
+          4,
+          16,
+          5
+        ],
+        [
+          12,
+          10,
+          2,
+          15,
+          16,
+          5
+        ],
+        [
+          4,
+          12,
+          2,
+          12,
+          16,
+          5
+        ]
+      ],
+      "tiles": [
+        198,
+        198,
+        199,
+        199,
+        198,
+        198
+      ],
+      "position": [
+        23,
+        80,
+        48
+      ],
+      "useNote": "Bốn chân, mặt ghế và lưng ở −Z; không ngồi được.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 333,
+      "name": "Đôn tre thấp trang trí",
+      "shape": "boxes",
+      "boxes": [
+        [
+          1,
+          6,
+          1,
+          15,
+          9,
+          15
+        ],
+        [
+          2,
+          0,
+          2,
+          5,
+          6,
+          5
+        ],
+        [
+          11,
+          0,
+          2,
+          14,
+          6,
+          5
+        ],
+        [
+          2,
+          0,
+          11,
+          5,
+          6,
+          14
+        ],
+        [
+          11,
+          0,
+          11,
+          14,
+          6,
+          14
+        ]
+      ],
+      "tiles": [
+        192,
+        192,
+        193,
+        193,
+        192,
+        192
+      ],
+      "position": [
+        26,
+        80,
+        48
+      ],
+      "useNote": "Mặt đôn thấp trên bốn chân có khoảng trống.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 334,
+      "name": "Kệ tuyết tùng ba tầng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          2,
+          2,
+          16,
+          14
+        ],
+        [
+          14,
+          0,
+          2,
+          16,
+          16,
+          14
+        ],
+        [
+          2,
+          0,
+          2,
+          14,
+          2,
+          14
+        ],
+        [
+          2,
+          7,
+          2,
+          14,
+          9,
+          14
+        ],
+        [
+          2,
+          14,
+          2,
+          14,
+          16,
+          14
+        ]
+      ],
+      "tiles": [
+        196,
+        196,
+        197,
+        197,
+        196,
+        196
+      ],
+      "position": [
+        14,
+        80,
+        52
+      ],
+      "useNote": "Ba mặt kệ và hai thành; chỉ để xây trang trí.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 335,
+      "name": "Giá kê đồng hai chân",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          12,
+          5,
+          16,
+          15,
+          11
+        ],
+        [
+          1,
+          0,
+          3,
+          4,
+          12,
+          13
+        ],
+        [
+          12,
+          0,
+          3,
+          15,
+          12,
+          13
+        ]
+      ],
+      "tiles": [
+        210,
+        210,
+        210,
+        210,
+        210,
+        210
+      ],
+      "position": [
+        17,
+        80,
+        52
+      ],
+      "useNote": "Hai chân tấm và thanh mặt hẹp cho xưởng.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 336,
+      "name": "Ghế mây mặt dày trang trí",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          5,
+          0,
+          16,
+          10,
+          16
+        ],
+        [
+          1,
+          0,
+          1,
+          4,
+          5,
+          4
+        ],
+        [
+          12,
+          0,
+          1,
+          15,
+          5,
+          4
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          5,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          5,
+          15
+        ]
+      ],
+      "tiles": [
+        202,
+        202,
+        203,
+        203,
+        202,
+        202
+      ],
+      "position": [
+        20,
+        80,
+        52
+      ],
+      "useNote": "Mặt đan dày với chân thấp, không có nội dung chứa.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 337,
+      "name": "Quầy ván thuyền trang trí",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          16
+        ],
+        [
+          0,
+          0,
+          2,
+          16,
+          13,
+          5
+        ],
+        [
+          1,
+          0,
+          12,
+          4,
+          13,
+          15
+        ],
+        [
+          12,
+          0,
+          12,
+          15,
+          13,
+          15
+        ]
+      ],
+      "tiles": [
+        206,
+        206,
+        207,
+        207,
+        206,
+        206
+      ],
+      "position": [
+        23,
+        80,
+        52
+      ],
+      "useNote": "Mặt quầy rộng, vách trước và chân sau.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 338,
+      "name": "Giá trưng bày viền thau",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          4,
+          3,
+          4,
+          12,
+          11,
+          12
+        ],
+        [
+          1,
+          11,
+          1,
+          15,
+          14,
+          15
+        ]
+      ],
+      "tiles": [
+        213,
+        213,
+        213,
+        213,
+        213,
+        213
+      ],
+      "position": [
+        26,
+        80,
+        52
+      ],
+      "useNote": "Bục ba tầng cho vật trang trí do người chơi đặt.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 339,
+      "name": "Bồn gốm vuông rỗng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          0,
+          3,
+          0,
+          3,
+          12,
+          16
+        ],
+        [
+          13,
+          3,
+          0,
+          16,
+          12,
+          16
+        ],
+        [
+          3,
+          3,
+          0,
+          13,
+          12,
+          3
+        ],
+        [
+          3,
+          3,
+          13,
+          13,
+          12,
+          16
+        ]
+      ],
+      "tiles": [
+        182,
+        182,
+        182,
+        182,
+        182,
+        182
+      ],
+      "position": [
+        34,
+        80,
+        48
+      ],
+      "useNote": "Bốn thành và đáy có lòng rỗng; không tự trồng cây.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 340,
+      "name": "Máng gốm ngọc rỗng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          3,
+          16,
+          2,
+          13
+        ],
+        [
+          0,
+          2,
+          3,
+          2,
+          7,
+          13
+        ],
+        [
+          14,
+          2,
+          3,
+          16,
+          7,
+          13
+        ],
+        [
+          2,
+          2,
+          3,
+          14,
+          7,
+          5
+        ],
+        [
+          2,
+          2,
+          11,
+          14,
+          7,
+          13
+        ]
+      ],
+      "tiles": [
+        184,
+        184,
+        184,
+        184,
+        184,
+        184
+      ],
+      "position": [
+        37,
+        80,
+        48
+      ],
+      "useNote": "Máng thấp dọc X, chỉ là hình khối trang trí.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 341,
+      "name": "Con sơn sa thạch bậc",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          4,
+          4
+        ],
+        [
+          0,
+          4,
+          0,
+          16,
+          8,
+          8
+        ],
+        [
+          0,
+          8,
+          0,
+          16,
+          12,
+          12
+        ],
+        [
+          0,
+          12,
+          0,
+          16,
+          16,
+          16
+        ]
+      ],
+      "tiles": [
+        170,
+        170,
+        170,
+        170,
+        170,
+        170
+      ],
+      "position": [
+        40,
+        80,
+        48
+      ],
+      "useNote": "Giá đỡ thu bậc bám phía −Z, đặt dưới mái.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 342,
+      "name": "Vành ống khói phiến",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          3,
+          16,
+          16
+        ],
+        [
+          13,
+          0,
+          0,
+          16,
+          16,
+          16
+        ],
+        [
+          3,
+          0,
+          0,
+          13,
+          16,
+          3
+        ],
+        [
+          3,
+          0,
+          13,
+          13,
+          16,
+          16
+        ]
+      ],
+      "tiles": [
+        216,
+        216,
+        216,
+        216,
+        216,
+        216
+      ],
+      "position": [
+        43,
+        80,
+        48
+      ],
+      "useNote": "Bốn vách dày và lỗ giữa thật; không sinh khói.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 343,
+      "name": "Chóp thau phân tầng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          3,
+          3,
+          3,
+          13,
+          7,
+          13
+        ],
+        [
+          5,
+          7,
+          5,
+          11,
+          12,
+          11
+        ],
+        [
+          7,
+          12,
+          7,
+          9,
+          16,
+          9
+        ]
+      ],
+      "tiles": [
+        213,
+        213,
+        213,
+        213,
+        213,
+        213
+      ],
+      "position": [
+        46,
+        80,
+        48
+      ],
+      "useNote": "Bốn tầng vuông thu nhỏ làm đỉnh cổng.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 344,
+      "name": "Bệ cẩm thạch ba tầng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          16
+        ],
+        [
+          3,
+          3,
+          3,
+          13,
+          7,
+          13
+        ],
+        [
+          1,
+          7,
+          1,
+          15,
+          10,
+          15
+        ]
+      ],
+      "tiles": [
+        177,
+        177,
+        177,
+        177,
+        177,
+        177
+      ],
+      "position": [
+        34,
+        80,
+        52
+      ],
+      "useNote": "Bệ thấp rộng, thân thu và mặt trên vuông.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 345,
+      "name": "Cửa gió đồng nan thẳng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          3,
+          2
+        ],
+        [
+          0,
+          0,
+          14,
+          16,
+          3,
+          16
+        ],
+        [
+          0,
+          0,
+          2,
+          2,
+          3,
+          14
+        ],
+        [
+          14,
+          0,
+          2,
+          16,
+          3,
+          14
+        ],
+        [
+          3,
+          0,
+          2,
+          4,
+          3,
+          14
+        ],
+        [
+          5,
+          0,
+          2,
+          6,
+          3,
+          14
+        ],
+        [
+          7,
+          0,
+          2,
+          8,
+          3,
+          14
+        ],
+        [
+          9,
+          0,
+          2,
+          10,
+          3,
+          14
+        ],
+        [
+          11,
+          0,
+          2,
+          12,
+          3,
+          14
+        ]
+      ],
+      "tiles": [
+        210,
+        210,
+        210,
+        210,
+        210,
+        210
+      ],
+      "position": [
+        37,
+        80,
+        52
+      ],
+      "useNote": "Khung thấp và năm nan dọc có khe thật.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 346,
+      "name": "Mái hiên rơm giật cấp",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          13,
+          0,
+          16,
+          16,
+          5
+        ],
+        [
+          0,
+          10,
+          5,
+          16,
+          13,
+          10
+        ],
+        [
+          0,
+          7,
+          10,
+          16,
+          10,
+          16
+        ]
+      ],
+      "tiles": [
+        217,
+        217,
+        217,
+        217,
+        217,
+        217
+      ],
+      "position": [
+        40,
+        80,
+        52
+      ],
+      "useNote": "Ba bản mái giật cao về −Z, không có vải động.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 347,
+      "name": "Cụm đá bước ba viên",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          1,
+          5,
+          3,
+          7
+        ],
+        [
+          7,
+          0,
+          0,
+          13,
+          4,
+          6
+        ],
+        [
+          5,
+          0,
+          9,
+          12,
+          2,
+          16
+        ]
+      ],
+      "tiles": [
+        171,
+        171,
+        171,
+        171,
+        171,
+        171
+      ],
+      "position": [
+        43,
+        80,
+        52
+      ],
+      "useNote": "Ba viên vuông thấp tách nhau, khe va chạm khớp hình.",
+      "fixedAxis": "fixed"
+    },
+    {
+      "id": 348,
+      "name": "Khung kiện gỗ thoáng",
+      "shape": "boxes",
+      "boxes": [
+        [
+          0,
+          0,
+          0,
+          16,
+          2,
+          16
+        ],
+        [
+          0,
+          2,
+          0,
+          2,
+          14,
+          2
+        ],
+        [
+          14,
+          2,
+          0,
+          16,
+          14,
+          2
+        ],
+        [
+          0,
+          2,
+          14,
+          2,
+          14,
+          16
+        ],
+        [
+          14,
+          2,
+          14,
+          16,
+          14,
+          16
+        ],
+        [
+          0,
+          14,
+          0,
+          16,
+          16,
+          2
+        ],
+        [
+          0,
+          14,
+          14,
+          16,
+          16,
+          16
+        ],
+        [
+          0,
+          14,
+          2,
+          2,
+          16,
+          14
+        ],
+        [
+          14,
+          14,
+          2,
+          16,
+          16,
+          14
+        ]
+      ],
+      "tiles": [
+        196,
+        196,
+        197,
+        197,
+        196,
+        196
+      ],
+      "position": [
+        46,
+        80,
+        52
+      ],
+      "useNote": "Khung cạnh hở có đáy, không phải rương chứa đồ.",
+      "fixedAxis": "fixed"
+    }
+  ],
+  "bays": [
+    {
+      "index": 1,
+      "ids": [
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258
+      ],
+      "camera": [
+        -40,
+        85,
+        42
+      ],
+      "aim": [
+        -40,
+        80.5,
+        30
+      ]
+    },
+    {
+      "index": 2,
+      "ids": [
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268
+      ],
+      "camera": [
+        -20,
+        85,
+        42
+      ],
+      "aim": [
+        -20,
+        80.5,
+        30
+      ]
+    },
+    {
+      "index": 3,
+      "ids": [
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278
+      ],
+      "camera": [
+        0,
+        85,
+        42
+      ],
+      "aim": [
+        0,
+        80.5,
+        30
+      ]
+    },
+    {
+      "index": 4,
+      "ids": [
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288
+      ],
+      "camera": [
+        20,
+        85,
+        42
+      ],
+      "aim": [
+        20,
+        80.5,
+        30
+      ]
+    },
+    {
+      "index": 5,
+      "ids": [
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298
+      ],
+      "camera": [
+        40,
+        85,
+        42
+      ],
+      "aim": [
+        40,
+        80.5,
+        30
+      ]
+    },
+    {
+      "index": 6,
+      "ids": [
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308
+      ],
+      "camera": [
+        -40,
+        85,
+        62
+      ],
+      "aim": [
+        -40,
+        80.5,
+        50
+      ]
+    },
+    {
+      "index": 7,
+      "ids": [
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318
+      ],
+      "camera": [
+        -20,
+        85,
+        62
+      ],
+      "aim": [
+        -20,
+        80.5,
+        50
+      ]
+    },
+    {
+      "index": 8,
+      "ids": [
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328
+      ],
+      "camera": [
+        0,
+        85,
+        62
+      ],
+      "aim": [
+        0,
+        80.5,
+        50
+      ]
+    },
+    {
+      "index": 9,
+      "ids": [
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338
+      ],
+      "camera": [
+        20,
+        85,
+        62
+      ],
+      "aim": [
+        20,
+        80.5,
+        50
+      ]
+    },
+    {
+      "index": 10,
+      "ids": [
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348
+      ],
+      "camera": [
+        40,
+        85,
+        62
+      ],
+      "aim": [
+        40,
+        80.5,
+        50
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "key": "c25_rusticated_sandstone",
+      "index": 170,
+      "rgbaSHA256": "29a6b0aab56a3f953b12bc03679bcf06920ae7a78bef64151612f5f332fe1e91",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "e52256cb3aafc18bcb36f8f9141973cabe99b0d50447e802090612b6063769bf",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_granite_fan_paving",
+      "index": 171,
+      "rgbaSHA256": "b5431843b87721ae021f512771b96b2521d7556827c8a645942b8b083a1e3a4c",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "c390e627f8beeb94adfba18a71398d87d1b114da88d63eaf980299ca6d8d54a0",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_limestone_longcourse",
+      "index": 172,
+      "rgbaSHA256": "eb8c9e948ee1cffd822d3582d57fdf63dfc09d14fc9a56e55699d7c8ec286096",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "0ff2f1a13d02be50ad56eea64a5bbfd3661140caca931597a9c37b6a439a4d7a",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_basalt_octagon_inlay",
+      "index": 173,
+      "rgbaSHA256": "eca1a121e925fe607702657d758b1fef1667469fa78e9e77e63bd686d63e5eb3",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "590eaccc643d6d56e3e44c1c9afb4f17e0fefc5b5db83812e1d485279181f13b",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_ribbed_travertine",
+      "index": 174,
+      "rgbaSHA256": "8e9e1ce780742859f14352e664023020b182ef7b18fe210922b2ffc3aa50bef8",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "e752d960cc6c3a3d9ffac7e449d0264099add1387231d9b2ec056ae0ae764759",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_slate_chevron",
+      "index": 175,
+      "rgbaSHA256": "1186d09391c1859c84df3738c2438f3dadeb7b69540e3e69636a468c617129fa",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "14c06fa8b171ef3dc2cf22be67627b2135566a483e25b3ea973bcf7f9fc424e7",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_river_pebble_panel",
+      "index": 176,
+      "rgbaSHA256": "1976a2567f169d1787163f3ceaba2a3e13af19de6e161ce4789488de36d5f606",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "a85fa90ba451cb06b0601eddb833cb5ecd12865527aff80e46796e9caf310af9",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_branch_white_marble",
+      "index": 177,
+      "rgbaSHA256": "e9608d3a2c59223d29ee7fe122eaad07444358e2618a1753c5cca519f778f5f8",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "ae872b2b25d49a586fe42f69a1a8b28313ce1b26cc4418584cbf62af500cedd0",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_fractured_green_marble",
+      "index": 178,
+      "rgbaSHA256": "4c200f15083b44e8da55358fa4533a5bb0fca9c258f09c791c1fabbddda2b9a8",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "5e5a9ea4c88fa28347c0cb80101b0ef27fbfb07d2458d924e8526221bd6e7767",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_rose_strata_stone",
+      "index": 179,
+      "rgbaSHA256": "09a8669f509a155f6e622e12079f8f9a4e607ca36e999849f899309bfa9ca08f",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "bc043977e97f9d92f04486d6024a42bc331d0946ffa43ec53997dda8d8309128",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_fossil_limestone",
+      "index": 180,
+      "rgbaSHA256": "49f459fe176fde3187f71dc29d4e54d17e8d4687db5e5d110739a263eeb996ec",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "c75ec0f401adb2c9550fd74a69fa062eb8d640788c0061a89bf99c67c4c5559e",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_cobalt_wave_ceramic",
+      "index": 181,
+      "rgbaSHA256": "0b5b0a5116f169b4bded31670c8801ac5b36c8a9ceb7f61514f1efdbb5104c5f",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "84aa8b21b6620d42676db438c7d788735515f59ad746de0ee759d0f859836c49",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_terracotta_sun_disk",
+      "index": 182,
+      "rgbaSHA256": "24e2197e7eda7b469485c991290faec7ec6a4670bcc532baa08a1ff517899fda",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "1308a0f943060a5d09b54e76a374374b856c1786a03e0fb532664863b22c64b7",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_ivory_fan_relief",
+      "index": 183,
+      "rgbaSHA256": "6fbc2a246e230cf3d797d88046a14331ba109b8b54677cc7d40fd4abd1d4ec2a",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "8bbda70234a37a6088c87a3f078e7fb87baa071ba2b10719946ef8294d27740d",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_jade_bamboo_tile",
+      "index": 184,
+      "rgbaSHA256": "2497fae702ba1c8f0886ab5164273255d8da4fb45e2255ee299c194b15cf1264",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "9dceefb910051f1259032ae2dc81d8363a6b09880ad6bd2a6885d31dde4cf9ff",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_indigo_star_mosaic",
+      "index": 185,
+      "rgbaSHA256": "7988fb8b1be2145208a0fa601008284d0746cc2f7f210da6fd58c1c11268375a",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "5812bcc57e81b3f2d33a28836611115b9621bfb9016a0c93e8c1221b208e23b6",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_ochre_basket_brick",
+      "index": 186,
+      "rgbaSHA256": "63b31c38d8100056372eb7353143439a5fdedde6d8ccca0bf97e5212664032eb",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "e5099fe51f11d473c45b2d7e8e1d6a8684605f8bd647f394f64f27e5547f0a24",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_plum_octagon_ceramic",
+      "index": 187,
+      "rgbaSHA256": "7388cd589aeff5b526d158a13dd297030efeeb1251d88974474e52c91c927413",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "c557e1fa9b61a0787c92346ab60a4e38d0597c1e69e2c747bda352ac53559333",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_chalk_flower_rosette",
+      "index": 188,
+      "rgbaSHA256": "e8c07e9b6e1c72947509574cf6e8b8d8075a40fb6ea4a39713978d5971f2e99e",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "00ddb4fa6f49b8c114bfd1c794bf25f81479b136f335a19a468f2ced9c49a4fe",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_clinker_soldiercourse",
+      "index": 189,
+      "rgbaSHA256": "7b55acc54ed15c264ac837aa368ad9eaf50c33c697ddd196c02663c0e1561229",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "ac48b94ebe06dea43dd7b0d8b903f10f3cd42ddd05e28b8d0637e31a3d429077",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_pegged_oak_panel",
+      "index": 190,
+      "rgbaSHA256": "d2737e483053919823aa0ef0548015276c30fab1cd36d62975a1e10b73e5d530",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "1d3fd697fb0718bad025341e853542180002160f89f9428672b2a7e23063e595",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_pegged_oak_panel_cap",
+      "index": 191,
+      "rgbaSHA256": "20259d97149e7c3a537861ff5682291f146d24328a9f23a7605969628a4fee17",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "a4a82e34601a9daea597a36a337323f54c18aa2c86be475d4d6c3f122ede3360",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_bamboo_zigzag_weave",
+      "index": 192,
+      "rgbaSHA256": "ceddfe5f5e19d25d5fa85c005adf2aed74aef7d2e70feb76afc08b6c42ceb0af",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "90291c19ea2e2f6c2c7a22a971ead227383ffadee6d188f642ea8c49abd1e19e",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_bamboo_zigzag_weave_cap",
+      "index": 193,
+      "rgbaSHA256": "a5a722c21cfc54bef14c065bcba991b6036ab1c0e3737fb64c6952bf84c1fceb",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "7925c1bf43b921dbc69c9db8efd74b46ea7c470989f7d6471bd27e6409d8bc0b",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_walnut_herringbone",
+      "index": 194,
+      "rgbaSHA256": "5abf0e9f94da48ec2f9a0e344e180c2c6beee3754d0869c2d94f9bfa6f9dd78a",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "0a9ff10c74ce8fbc32477b9671d0461f7a5399c1e075a9aea04ae5305a30d732",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_walnut_herringbone_cap",
+      "index": 195,
+      "rgbaSHA256": "2f2a0a29b3de4dd2bf8a1e4ac3c47105031ea30f8b9d760b26c6428d4d2baf6a",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "acbffbf0b9c318e4a80cda44f8ea967c0cafc8f6b15de3021a7e4e78957d18fc",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_cedar_diagonal_frame",
+      "index": 196,
+      "rgbaSHA256": "534c09cbfe10b2b6fbf07ea3f6ce31117ea5d2c1fb19e00fef48514a68b60ee4",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "d353b909a341aa2c5d64fc096fbf91f2877fffaeed568b1cac0fcc456a9a3045",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_cedar_diagonal_frame_cap",
+      "index": 197,
+      "rgbaSHA256": "068930a087718032a077112b844f632bd2ca0e0df36f9521a1a8d4b4b8c738ab",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "543cff7205081eac445f62a27958db8bcc7adc196adf16bb6c56cecfeb84efdb",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_birch_square_joinery",
+      "index": 198,
+      "rgbaSHA256": "3f5465adb88998d054b9b2f7c921cff5fd22dea125a5567c9d0e202fe34bbebf",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "b20f8e06e6e6e24320fb2a4d269c80999934ad36209c17cfab47f43b6defe43d",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_birch_square_joinery_cap",
+      "index": 199,
+      "rgbaSHA256": "179fe44a58796d7465cdfcc2ddd8c2df6171a396cb6b11010ea68ef5f90a1296",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "518eb1ad2f6513983f15c2816f3323a8c8b8801324427bb08808c8a1ad2be1b5",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_chestnut_scallop_shingle",
+      "index": 200,
+      "rgbaSHA256": "420447610ce2eef13c53fb017b1717a392849f60f701cf76ecdfff83f63f4c56",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "9a5db86497319e5ff76c21d55ae488593cb8a26c50787623c785858f670309ed",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_chestnut_scallop_shingle_cap",
+      "index": 201,
+      "rgbaSHA256": "5c330b91f8d2d9713531a4e1145b38d21b5ec940f817380289f306b6be27ca60",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "24ff38f7164cb7474b12431db7a7bdb38739969bcc26b0147e0d74f156c3ec22",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_rattan_hex_weave",
+      "index": 202,
+      "rgbaSHA256": "9601bbc6997b54bb57b40d1709f103df32c4f0649d5bbb63d18c153e60fd7ad8",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "ce8c7382d9f7bc032cbbadd3e43a027ee9955883c037546044746907eab3d623",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_rattan_hex_weave_cap",
+      "index": 203,
+      "rgbaSHA256": "4390d6e8583d0f893af51db11b999139726b2c1a5d3764b563e578a236d02006",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "e1a6b5a1afb0d4ca8a78e505c1ba078f3278758401c0c95ff0606cb639d1308a",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_charred_parallel_wood",
+      "index": 204,
+      "rgbaSHA256": "09226fa625f7e6e510e32ac907711d9ba8b5edbe9c61f7e306f8c860ef7bde44",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "4368f8f411edcdea88c300ec7746ca1e0414da561a4b5a11760efac8b74d3a66",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_charred_parallel_wood_cap",
+      "index": 205,
+      "rgbaSHA256": "eeb78ee75e71cb96d1381c36515aa0a60015d6cd72f2bd1e3c141f252a674f1a",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "5b51efde79e1efc6ad2c8636f3e53e08d465559bb1cb1bf404b2f0756c2e4fbd",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_shipwood_nailboard",
+      "index": 206,
+      "rgbaSHA256": "f829d3166d5e925dccd1d687de2e770f911031147107ad58e61a72f13b0622b8",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "c8d7a33e50d748f583f8b7fe8c0351587c4a9e19ac6c20366bdfcc6c26b2e70b",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_shipwood_nailboard_cap",
+      "index": 207,
+      "rgbaSHA256": "ac54810aef665464c62bbc91e1d498a30084227ab0055cb8cfbcdd8b088ffafd",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "bf69073f66f1c93b369a228b736cf7e44bb8016701abc86d0a89d9d4666b513a",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_paper_timber_lattice",
+      "index": 208,
+      "rgbaSHA256": "7ff29fa1ac4f958493437806b14cbce705f0f11f72005df775fb02762b4eda06",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "f63ab6e213cfd7ac5bbe9d1ecd076dee1de99c831ca73a008d4c235c5499240a",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_paper_timber_lattice_cap",
+      "index": 209,
+      "rgbaSHA256": "99cd751f185fb55d261b87b8f5c4fee59dd076bf61d472a5b3de2797b9a99f96",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "5b71a6b59d282cfa9e8d18f79b7c16efeef92fe374333b335b7977beaad3c981",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_copper_standing_seam",
+      "index": 210,
+      "rgbaSHA256": "b16a5b4f5bb60325c53b14015f52638f290ef513623e95a075d7c5e2abb1bfe0",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "332501f6006940738de94cb6e99b8c8b1e732f6116237ad55c3c845a06e15c80",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_zinc_diamond_roof",
+      "index": 211,
+      "rgbaSHA256": "772c544ea06db71e67f2a2660bcf3ee0a15fc65067152356e7c7b53dfae7e42b",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "8ee2de3c58d8640a8055e5ccfb4fdb74ba1b20fccd72e02028bfb322bda47ac4",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_iron_corrugated_panel",
+      "index": 212,
+      "rgbaSHA256": "6032fbeb47f332d51289bb55a4317acfaaddba79903d2fc46a0d8f654f9a09fd",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "962e8590fe43d54dba98e0dfc81c9f577b70bb396192c2550f563631221f5e02",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_brass_rivet_plaque",
+      "index": 213,
+      "rgbaSHA256": "51bd13e88a5ea869d066ed4369f0cac59301107f2c5f58ae04d10b706f99e842",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "1ab81e1eee0f53b52979b17547c5b6bee63cebef8148517326bfe431502e51c1",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_hammered_bronze",
+      "index": 214,
+      "rgbaSHA256": "e9324075d86d8b0cecfcaa15377f13e5b760a5165c025c0d18b46975827b5a9a",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "d387080892b3b1ff9667c7fe8f311d7e2365d2179a095e21db3ace4dd01932bb",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_verdigris_sunken_square",
+      "index": 215,
+      "rgbaSHA256": "edd4770121b6d258178a57342dceffe94fbf66b70d52730c5f3a8edf47be1321",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "38f169e13196b7782f1773efa50bbdaa941f78eef4c83f7b2d3e4b603157b68f",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_slate_ridge_course",
+      "index": 216,
+      "rgbaSHA256": "b988446eb9d4cd67440ad4f0c9ec426079d9a10129b9ceafa8291c3236c72fa1",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "4bb24701192df0a0b6dd6b4817c7305c98b1a866985524f39df4407e899f9be4",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_bound_straw_thatch",
+      "index": 217,
+      "rgbaSHA256": "41f5adb127173ef59e3398fbb8bff07d727ca7c91a0af387a8a2884ce93e153d",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "306d7cf0e7459d854f8b477d95977f1c5cd191739883219656d25ef50d6c1538",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_terracotta_overlap_tile",
+      "index": 218,
+      "rgbaSHA256": "eb341263cbebc11988ffa70bcd56cc6e0da7a37a1c1f44c60dfce24c09772bec",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "a93ba2d667d529bf603fd3eaff53d753026e3c984211cbdaf8e219c484f4bcdf",
+      "nativeGenerationGrid": 24
+    },
+    {
+      "key": "c25_blue_glazed_roof",
+      "index": 219,
+      "rgbaSHA256": "5374b1636d0c429e3d3c49c5d0ce462eb33873fce610bb8193ce336f9a0608b4",
+      "native24Bytes": 2304,
+      "legacy16SHA256": "d458340d03e75db8f1406ea9c77ecac41faff4439a87011d05886c210208678d",
+      "nativeGenerationGrid": 24
+    }
+  ],
+  "gallery": {
+    "file": "worlds/05_xuong_100_khoi_c25.json",
+    "seed": "MMR-C25-XUONG-100-KHOI",
+    "spawn": [
+      0.5,
+      81.05,
+      64.5
+    ],
+    "mode": "creative",
+    "fly": true,
+    "floor": {
+      "id": 239,
+      "y": 78,
+      "boundsXZ": [
+        -50,
+        50,
+        20,
+        65
+      ]
+    },
+    "pedestal": {
+      "id": 21,
+      "y": 79
+    },
+    "clear": {
+      "bounds": [
+        -50,
+        79,
+        20,
+        50,
+        95,
+        65
+      ],
+      "onlyDiffFromActualBase": true
+    },
+    "maxEditedCells": 100000,
+    "maxEditedChunks": 4096,
+    "cellIndexRange": [
+      0,
+      24575
+    ],
+    "visualCoverage": "10 originals each with all10 specimen cell8corners within viewport/effective clip to0.5px; mesh/logical acceptance and actual visual review separate. Close views added if details unclear."
+  },
+  "claimBoundaries": [
+    "Native API tests are not physical-input tests.",
+    "100 material/geometry combinations, not100uniquegeometries.",
+    "No runtime visual acceptance without original images actually viewed.",
+    "All eight scene workflows remain in combined final three-round gate."
+  ],
+  "previousContract": "notes/PRODUCT_C25_CRAFTED_BLOCKS_CONTRACT_V1.json",
+  "nativeScene": {
+    "id": "crafted_workshop",
+    "buttonId": "sceneLaunchCraftedWorkshop",
+    "name": "Xưởng 100 mẫu mới",
+    "group": "expansion",
+    "theme": "workshop",
+    "swatches": [
+      249,
+      260,
+      269,
+      279,
+      299,
+      339
+    ],
+    "sourceWorld": "worlds/05_xuong_100_khoi_c25.json",
+    "sourceBytes": 59054,
+    "sourceSha256": "5453a3532e325a031a0e674b614f39d017003c0c8eacc2b4bb39108161cb2dd7",
+    "previousSevenRawStringsPreserved": true,
+    "totalScenes": 8,
+    "nativeLaunchLockCancelUnchanged": true
+  }
+}

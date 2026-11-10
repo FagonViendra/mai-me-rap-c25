@@ -1,0 +1,47 @@
+MẢI MÊ RÁP C25 — DỰNG LẠI TỪ NGUỒN
+Hướng dẫn dựng HTML và kiểm tra lại dữ liệu cảnh từ cây nguồn C25 đi kèm. Dựng lại trùng nguồn không thay thế kiểm tra chơi thực tế.
+
+1. Thành phần cần giữ
+Để dựng HTML, giữ đủ 56 tệp của thư mục src và tools/build.py. Tệp build.py gom JavaScript, CSS và các panel HTML thành một MAI_ME_RAP.html độc lập; chương trình dựng dùng Python 3.10 trở lên và thư viện chuẩn. crafted-blocks.js được nạp trước catalog.js; block-shapes.js nạp ngay sau catalog.js. Thứ tự module đã được ghi trong build.py, không tự đổi khi chép nguồn.
+
+Bộ SOURCE đầy đủ giữ 69 đầu vào: 56 tệp src; 4 công cụ tools/build.py, tools/generate_c24_scene_data.py, tools/generate_c25_scene_data.py và tools/generate_c25_showcase_v2.cjs; 8 JSON trong worlds; cùng notes/PRODUCT_C25_CRAFTED_BLOCKS_CONTRACT_V2.json. Các công cụ sinh cảnh, JSON thế giới và contract phục vụ kiểm tra/tạo lại dữ liệu; chúng không phải tệp cần đọc khi chạy HTML đã dựng. Công cụ C24 được giữ làm nguồn lịch sử, không dùng để ghi lại dữ liệu tám cảnh C25.
+
+Muốn làm đủ hai bước kiểm tra bên dưới, giữ nguyên tên và vị trí của các đầu vào đó. Generator xưởng đọc đúng contract V2 nêu trên, không tự chuyển sang một tệp contract có số phiên bản lớn hơn. Tám cảnh đã nhúng sẵn trong src/scene-library-data.js.
+
+2. Kiểm tra lại xưởng 100 mẫu
+Mở terminal tại thư mục nguồn C25. Kiểm tra payload xưởng trước, rồi kiểm tra dữ liệu tám cảnh đã nhúng ở bước 3. Công cụ dưới đây dùng Node.js và các module chuẩn, không cần cài gói npm:
+
+    node tools/generate_c25_showcase_v2.cjs --check
+
+Lệnh đọc sáu tệp src/crafted-blocks.js, src/catalog.js, src/world-coordinates.js, src/world.js, src/realm-generation.js, src/sky-generation.js; thêm worlds/04_nong_trai_ven_rung.json và notes/PRODUCT_C25_CRAFTED_BLOCKS_CONTRACT_V2.json. Nó dựng lại payload trong bộ nhớ rồi so sánh toàn bộ byte với worlds/05_xuong_100_khoi_c25.json hiện có. Xưởng hiện có đúng 100 mã 249–348, mỗi mã một mẫu; 4.846 ô sửa trong 32 chunk. Floor, viền, bệ và phần dọn địa hình chỉ ghi khi khác địa hình gốc. Kết quả cần có SHOWCASE_PAYLOAD_REPRODUCIBLE và hash thế giới 5453a3532e325a031a0e674b614f39d017003c0c8eacc2b4bb39108161cb2dd7.
+
+Muốn ghi một biên bản mới cho đúng nguồn đang dùng, thêm một đường dẫn chưa tồn tại:
+
+    node tools/generate_c25_showcase_v2.cjs --check --report notes/SHOWCASE_CHECK_MY_BUILD.json
+
+Công cụ không ghi đè thế giới hoặc biên bản đã có. V1 và các biên bản cũ giữ lại lịch sử nguồn; V2 tách kiểm tra payload thế giới khỏi pin của biên bản lịch sử để thay đổi riêng icon không làm sai kết luận về JSON. Một biên bản cũ không tự được coi là bằng chứng cho nguồn mới.
+
+3. Kiểm tra dữ liệu tám cảnh
+Tại cùng thư mục nguồn, chạy:
+
+    python tools/generate_c25_scene_data.py --check
+
+Công cụ kiểm tra byte count, SHA-256 và cấu trúc từng JSON rồi so sánh dữ liệu nhúng. Tám ID gồm inferno, sky, workshop, lake_village, sky_garden, market_workshop, forest_farm, crafted_workshop. Bảy chuỗi JSON cũ được giữ nguyên; cảnh mới đọc từ worlds/05_xuong_100_khoi_c25.json. Không dùng generator C24 để thay dữ liệu C25.
+
+4. Dựng HTML vào vị trí mới
+Chọn tên thư mục chưa dùng, ví dụ:
+
+    python tools/build.py --output builds/c25_my_rebuild/MAI_ME_RAP.html
+
+Lệnh tạo MAI_ME_RAP.html và BUILD.json cạnh nhau. BUILD.json ghi byte count, hash của HTML, các nguồn được ghép và hash công cụ dựng. Nếu HTML hoặc BUILD.json tại đích đã có, công cụ từ chối ghi đè; chọn một thư mục mới thay vì xóa bản cũ.
+
+Đối chiếu byte count/SHA-256 của HTML và các nguồn với BUILD.json đi kèm đúng bản nguồn. Khi so byte BUILD.json giữa Windows và Linux, có thể chỉ chuyển CRLF thành LF; giữ nguyên mọi field, giá trị và thứ tự. Việc dựng lại trùng nguồn không thay thế kiểm tra chơi thực tế.
+
+Các lệnh trên dùng python trên hệ thống đã có Python 3.10 trở lên. Trên máy dùng trình khởi động Python của Windows, có thể gọi cùng script bằng py -3. Node chỉ cần cho công cụ sinh/kiểm tra xưởng và các bài kiểm tra phát triển; game đã dựng chạy trong trình duyệt có WebGL2.
+
+5. Phân biệt công cụ kiểm tra hình và phụ thuộc game
+tools/render_c25_cpu_icons_v1.cjs, nếu có trong một checkpoint phát triển, là công cụ bằng chứng ngoài 69 đầu vào của SOURCE tối thiểu. Nó dùng @napi-rs/canvas, một bản nguồn C24 đối chiếu và đường dẫn môi trường kiểm tra; không phải bước bắt buộc để dựng hoặc chạy game. Bảng texture và icon CPU không chứng minh ánh sáng, GPU hay thao tác chơi trong trình duyệt. Kiểm tra chức năng trong trình duyệt dùng WebGL phần mềm cũng không phải phép đo hiệu năng GPU Windows.
+
+Gói GAME kèm CHOI_GAME.cmd, open_or_serve.py và serve.py để mở game. Ba tệp này không phải đầu vào bắt buộc để dựng HTML từ SOURCE. Lệnh dựng không tự mở máy chủ hoặc tạo nơi lưu game cùng địa chỉ với bản đã chơi.
+
+Khi nhận nguồn để dựng lại, dùng cây nguồn đầy đủ và giữ cấu trúc thư mục; không ghép các mảnh cập nhật theo suy đoán.

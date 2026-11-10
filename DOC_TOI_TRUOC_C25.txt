@@ -1,0 +1,31 @@
+MẢI MÊ RÁP C25 — ĐỌC TÔI TRƯỚC
+Hướng dẫn mở game và giữ lại bản đang xây.
+Xem HUONG_DAN_C25.txt để đọc cách dùng chi tiết và giới hạn của từng phần.
+
+1. Chọn bộ tệp và mở game
+GAME là gói để chơi. SOURCE dành cho người muốn đọc mã hoặc dựng lại game, kèm hướng dẫn riêng. Gallery tập hợp ảnh giao diện, góc nhìn trong cảnh, khu trưng bày và Hộ Vệ; xem chú thích để phân biệt các bảng texture/icon của game và ảnh Hộ Vệ tạm dừng.
+
+MỞ GAME: Giải nén toàn bộ gói GAME rồi chạy CHOI_GAME.cmd. Giữ MAI_ME_RAP.html, open_or_serve.py và serve.py trong cùng thư mục. Bộ khởi chạy cần Python 3 trên máy. Chơi tiếp bằng cùng trình duyệt và cùng địa chỉ mà bộ khởi chạy mở để dùng đúng dữ liệu đã lưu.
+
+2. Vào Xưởng 100 mẫu mới
+Từ màn hình đầu, chọn “Thế giới & kho cảnh” → “Xưởng 100 mẫu mới” → “Chơi Xưởng 100 mẫu mới”. Xưởng có 10 khu, mỗi khu 10 mẫu; vào bằng Sáng tạo và bay bật sẵn.
+
+WASD di chuyển, chuột để nhìn. F bật/tắt bay; khi bay, Space đi lên và Shift hạ xuống. E mở túi đồ. Dùng 1–9 hoặc con lăn chọn ô thanh nhanh; chọn vật phẩm trong túi để gán vào ô đó. Chuột phải đặt khối, chuột trái đào; chuột giữa lấy mẫu đang nhìn trong Sáng tạo.
+
+Trong E, chọn “Tất cả” hoặc “Khối”, rồi “Bộ sưu tập” → “100 mẫu mới”. Chọn từng mẫu để đọc “Thông tin vật phẩm”. Nếu chưa thấy đủ mẫu, xóa từ tìm và bỏ chọn “Chỉ vật liệu đã ghim”.
+
+3. Ghép chất liệu và hình dáng
+100 mẫu kết hợp hình dáng với 50 họa tiết mới vẽ trên lưới 24×24. Chọn Esc → Thiết lập → Gói chất liệu → “Chi tiết 24×24” để dùng gói này.
+• Mẫu có hướng cố định, không tự xoay theo hướng nhìn.
+• Lan can và khung không tự nối với khối bên cạnh.
+• Bàn, ghế, kệ và chậu là đồ trang trí: chưa có thao tác ngồi, chứa đồ hay tự trồng cây.
+
+4. Giữ bản đang xây
+Mỗi lần bấm Chơi trên thẻ cảnh là yêu cầu tạo một bản riêng. Muốn chơi tiếp, chọn “Đến thế giới đã lưu” và mở đúng bản trong danh sách. Từ phiên đang chơi, nhấn Esc → “Về màn hình đầu” → “Thế giới & kho cảnh” để tới danh sách này. Nút về màn hình đầu thử lưu trước; nếu lưu thất bại, phiên vẫn được giữ và bảng dự phòng mở ra.
+
+Dùng Esc → “Lưu ngay”. Để có bản dự phòng ngoài trình duyệt, chọn Esc → “Xuất thế giới” → “Tải JSON”. Mở “Nhập tệp thế giới” trong danh sách thế giới để nhập lại bản JSON.
+
+Nếu game báo chưa lưu được hoặc chưa xác nhận bản lưu, giữ trang đang mở và xuất JSON trước khi rời trang; đừng bấm Chơi lặp lại để thử ghi đè. Chơi tiếp bằng cùng trình duyệt và cùng địa chỉ game đã dùng. Giữ bản JSON riêng và dùng C25 để mở thế giới có mẫu mới.
+
+5. Khám phá thêm
+Kho cảnh có tám cảnh để chọn. Nhấn J mở “Sổ Gió”, vào “Hộ Vệ” để chọn thử thách; đọc tên và lời nhắc né đòn trước khi gọi. Xem hướng dẫn C25 đầy đủ và danh mục 100 mẫu đi kèm khi cần cách dùng chi tiết.

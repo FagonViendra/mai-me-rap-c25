@@ -1,0 +1,10 @@
+<div id="adventure" class="screen shade hidden"><section class="pixel-panel adventure-panel" role="dialog" aria-modal="true" aria-labelledby="adventureTitle">
+ <header class="adventure-heading"><div><p class="adventure-kicker">MẢI MÊ RÁP · HÀNH TRÌNH LĂNG KÍNH</p><h2 id="adventureTitle">Sổ Gió</h2><p id="adventureSubtitle"></p></div><button id="adventureDone" type="button" class="pixel-button adventure-close" aria-label="Đóng Sổ Gió">×</button></header>
+ <nav class="adventure-tabs" role="tablist" aria-label="Các trang Sổ Gió">
+  <button type="button" role="tab" data-adventure-tab="journey" aria-selected="true">Hành trình</button><button type="button" role="tab" data-adventure-tab="village" aria-selected="false">Góp sức cho làng</button><button type="button" role="tab" data-adventure-tab="equipment" aria-selected="false">Trang bị</button><button type="button" role="tab" data-adventure-tab="guardian" aria-selected="false">Hộ Vệ</button>
+ </nav>
+ <div id="adventureContent"></div><p id="adventureMessage" class="adventure-message" role="status" aria-live="polite"></p>
+</section></div>
+<div id="guardianHud" class="guardian-hud hidden" aria-label="Thử thách Hộ Vệ">
+ <strong id="guardianName">HỘ VỆ LĂNG KÍNH</strong><span id="guardianPhase"></span><progress id="guardianHealth" max="96" value="96"></progress><small id="guardianWarning"></small>
+</div>
